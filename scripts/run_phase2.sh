@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Phase 2 (pretrained weights in models/ + one 3D brain MRI): the complete verification protocol.
+# Phase 2: the complete verification protocol, with the pretrained weights in models/ and
+# one 3D scan (MRI/CT NIfTI, DICOM, or a preprocessed .npy).
 #
-#   scripts/run_phase2.sh /path/to/brain_T1w.nii.gz ["optional question"]
+#   scripts/run_phase2.sh /path/to/scan.nii.gz ["optional question"]
 #
 # 1. verify checkpoint files (sizes + sha256 + every tensor name/shape in the shard headers)
 # 2. preprocess the MRI and write montages for visual orientation QA (radiological + RAS)

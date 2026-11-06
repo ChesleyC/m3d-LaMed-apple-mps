@@ -74,5 +74,4 @@ about 75 % of the M5's 153 GB/s memory bandwidth. All dtypes leave ≥ 15 GB of 
 
 **Pass.** The full inference graph (3D ViT, projector, Phi-3 decoder with KV cache, SegVol) runs
 natively on MPS in bf16/fp16/fp32, with no CUDA dependencies and no CPU fallback. It is
-checkpoint-compatible down to every tensor name and shape. Ready for Phase 2 (pretrained weights +
-a sample brain MRI).
+checkpoint-compatible down to every tensor name and shape. Ready for Phase 2 (pretrained weights).
