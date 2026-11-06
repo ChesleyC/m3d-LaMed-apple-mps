@@ -1,0 +1,241 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "synthetic": false,
+  "model_dir": null,
+  "component": "full",
+  "dtype": "bf16",
+  "attn": "sdpa",
+  "image": "upstream/M3D/Data/data/examples/example_03.npy",
+  "question": "What is liver in this image? Please output the segmentation mask.",
+  "task": "seg",
+  "max_new_tokens": 256,
+  "min_new_tokens": null,
+  "seg": true,
+  "runs": 3,
+  "warmup": 1,
+  "audit": false,
+  "json_out": "reports/phase2/bench_bf16_seg.json"
+ },
+ "load": {
+  "model_dir": "models",
+  "revision_expected": "329bed510c2cff0ad3fe6f2a1a7075f45e2706e9",
+  "load": {
+   "ok": true,
+   "loaded": 617,
+   "expected": 617,
+   "missing": [],
+   "unexpected": [],
+   "shape_mismatch": [],
+   "source_dtypes": {
+    "float32": 617
+   },
+   "target_dtype": "bfloat16",
+   "gb_read": 16.196,
+   "seconds": 2.86
+  },
+  "total_load_seconds": 2.91,
+  "dtype": "torch.bfloat16",
+  "device": "mps",
+  "attn_implementation": "sdpa",
+  "weights_bytes": 8098201504,
+  "after_load": {
+   "mps_current_allocated": 8105755648,
+   "mps_driver_allocated": 8976269312,
+   "phys_footprint": 9625863488,
+   "lifetime_max_phys_footprint": 9630025936,
+   "resident_size": 350601216
+  }
+ },
+ "preprocess": {
+  "source": "upstream/M3D/Data/data/examples/example_03.npy",
+  "source_format": "npy",
+  "original_shape": [
+   1,
+   32,
+   256,
+   256
+  ],
+  "original_spacing": [],
+  "orientation": "as-stored",
+  "reverse_slices": false,
+  "clip_percentiles": null,
+  "clip_values": null,
+  "crop_box": [],
+  "cropped_shape": [],
+  "output_shape": [
+   32,
+   256,
+   256
+  ],
+  "passthrough": true,
+  "notes": [
+   "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+  ]
+ },
+ "runs": [
+  {
+   "text": "The segmentation reveals  [SEG] .",
+   "output_ids": [
+    450,
+    10768,
+    362,
+    10320,
+    1338,
+    29871,
+    32014,
+    29889,
+    32000
+   ],
+   "question": "What is liver in this image? Please output the segmentation mask.",
+   "prompt_tokens": 272,
+   "new_tokens": 9,
+   "timings": {
+    "total_s": 1.0879,
+    "vision_encoder_projector_s": 0.0796,
+    "time_to_first_token_s": 0.3707,
+    "decode_s": 0.6244,
+    "decode_tokens": 9,
+    "decode_tokens_per_s": 14.41,
+    "end_to_end_tokens_per_s": 8.27,
+    "segmentation_s": 0.0927
+   },
+   "memory": {
+    "mps_peak_allocated": 8368013056,
+    "mps_peak_driver_allocated": 8988196864,
+    "samples": 440,
+    "mps_current_allocated": 8118341120,
+    "mps_driver_allocated": 8988180480,
+    "phys_footprint": 9697445448,
+    "lifetime_max_phys_footprint": 9701525064,
+    "resident_size": 582402048
+   },
+   "audit": null,
+   "seg_logits_shape": [
+    1,
+    1,
+    32,
+    256,
+    256
+   ]
+  },
+  {
+   "text": "The segmentation reveals  [SEG] .",
+   "output_ids": [
+    450,
+    10768,
+    362,
+    10320,
+    1338,
+    29871,
+    32014,
+    29889,
+    32000
+   ],
+   "question": "What is liver in this image? Please output the segmentation mask.",
+   "prompt_tokens": 272,
+   "new_tokens": 9,
+   "timings": {
+    "total_s": 1.1324,
+    "vision_encoder_projector_s": 0.0796,
+    "time_to_first_token_s": 0.3912,
+    "decode_s": 0.6512,
+    "decode_tokens": 9,
+    "decode_tokens_per_s": 13.82,
+    "end_to_end_tokens_per_s": 7.95,
+    "segmentation_s": 0.0899
+   },
+   "memory": {
+    "mps_peak_allocated": 8361726208,
+    "mps_peak_driver_allocated": 8988196864,
+    "samples": 455,
+    "mps_current_allocated": 8118341120,
+    "mps_driver_allocated": 8988180480,
+    "phys_footprint": 9697461832,
+    "lifetime_max_phys_footprint": 9701656136,
+    "resident_size": 582451200
+   },
+   "audit": null,
+   "seg_logits_shape": [
+    1,
+    1,
+    32,
+    256,
+    256
+   ]
+  },
+  {
+   "text": "The segmentation reveals  [SEG] .",
+   "output_ids": [
+    450,
+    10768,
+    362,
+    10320,
+    1338,
+    29871,
+    32014,
+    29889,
+    32000
+   ],
+   "question": "What is liver in this image? Please output the segmentation mask.",
+   "prompt_tokens": 272,
+   "new_tokens": 9,
+   "timings": {
+    "total_s": 1.0763,
+    "vision_encoder_projector_s": 0.0796,
+    "time_to_first_token_s": 0.3735,
+    "decode_s": 0.6133,
+    "decode_tokens": 9,
+    "decode_tokens_per_s": 14.68,
+    "end_to_end_tokens_per_s": 8.36,
+    "segmentation_s": 0.0895
+   },
+   "memory": {
+    "mps_peak_allocated": 8336564992,
+    "mps_peak_driver_allocated": 8988196864,
+    "samples": 434,
+    "mps_current_allocated": 8118341120,
+    "mps_driver_allocated": 8988180480,
+    "phys_footprint": 9697510984,
+    "lifetime_max_phys_footprint": 9701672520,
+    "resident_size": 582549504
+   },
+   "audit": null,
+   "seg_logits_shape": [
+    1,
+    1,
+    32,
+    256,
+    256
+   ]
+  }
+ ],
+ "summary": {
+  "dtype": "torch.bfloat16",
+  "weights": "pretrained",
+  "prompt_tokens": 272,
+  "new_tokens": 9,
+  "median_time_to_first_token_s": 0.3735,
+  "median_vision_encoder_projector_s": 0.0796,
+  "median_decode_tokens_per_s": 14.41,
+  "median_total_s": 1.0879,
+  "median_segmentation_s": 0.0899,
+  "weights_GiB": 7.54,
+  "peak_mps_allocated_GiB": 7.79,
+  "peak_mps_driver_GiB": 8.37,
+  "process_lifetime_peak_footprint_GiB": 9.04
+ }
+}

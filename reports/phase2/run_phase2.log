@@ -1,0 +1,270 @@
+== 1/8 checkpoint verification
+W1105 21:25:31.610000 86587 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+expected revision: GoodBaiBai88/M3D-LaMed-Phi-3-4B@329bed510c2cff0ad3fe6f2a1a7075f45e2706e9
+model dir: models
+  present: 11 files
+  sha256 verified: 11 files
+  status: OK
+  header check: 617 tensors, 0 unexpected/mis-shaped, 0 missing
+== 2/8 preprocessing
+W1105 21:25:40.824000 86652 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+{
+ "source": "upstream/M3D/Data/data/examples/example_05.npy",
+ "source_format": "npy",
+ "original_shape": [
+  1,
+  32,
+  256,
+  256
+ ],
+ "original_spacing": [],
+ "orientation": "as-stored",
+ "reverse_slices": false,
+ "clip_percentiles": null,
+ "clip_values": null,
+ "crop_box": [],
+ "cropped_shape": [],
+ "output_shape": [
+  32,
+  256,
+  256
+ ],
+ "passthrough": true,
+ "notes": [
+  "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+ ]
+}
+saved reports/phase2/input_m3d.npy: shape (1, 32, 256, 256), range [0.000, 1.000]
+montage: reports/phase2/input_montage.png
+== 3/8 inference + audit
+W1105 21:25:42.453000 86657 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+preprocessed upstream/M3D/Data/data/examples/example_05.npy -> (1, 32, 256, 256) in 0.03s (crop (), clip None)
+loading checkpoint (bf16) ...
+  loaded model-00001-of-00004.safetensors (5.0s)
+  loaded model-00002-of-00004.safetensors (3.6s)
+  loaded model-00003-of-00004.safetensors (5.0s)
+  loaded model-00004-of-00004.safetensors (1.6s)
+loaded 617/617 tensors (16.196 GB, source {'float32': 617} -> bfloat16) in 15.23s; MPS allocated 7.55 GiB
+
+=== question ===
+Can you provide a caption consists of findings for this medical image?
+=== M3D-LaMed answer ===
+No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.
+
+time to first token 0.5565s (vision encoder+projector 0.2209s) | 21 new tokens | decode 11.25 tok/s | generate total 2.424s
+memory: MPS peak allocated 7.67 GiB, MPS driver peak 8.36 GiB, process peak footprint 8.74 GiB
+device audit: PASS - 47352 compute ops on MPS, CPU compute ops: none, host<->device copies: {'to': 32, 'copy_': 22}
+wrote reports/phase2/inference_bf16_audit.json
+== 4/8 benchmark
+W1105 21:26:02.475000 86719 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+  loaded model-00001-of-00004.safetensors (2.5s)
+  loaded model-00002-of-00004.safetensors (3.4s)
+  loaded model-00003-of-00004.safetensors (4.8s)
+  loaded model-00004-of-00004.safetensors (1.6s)
+model ready in 12.4s | weights 7.54 GiB | MPS allocated 7.55 GiB
+[warmup] ttft 0.514s (vision 0.203s) | decode 21 tok @ 14.24 tok/s | total 1.99s | MPS peak 7.67 GiB | footprint peak 8.72 GiB
+[run1] ttft 0.376s (vision 0.080s) | decode 21 tok @ 14.55 tok/s | total 1.82s | MPS peak 7.66 GiB | footprint peak 8.72 GiB
+[run2] ttft 0.377s (vision 0.081s) | decode 21 tok @ 14.48 tok/s | total 1.83s | MPS peak 7.67 GiB | footprint peak 8.72 GiB
+[run3] ttft 0.376s (vision 0.080s) | decode 21 tok @ 14.56 tok/s | total 1.82s | MPS peak 7.66 GiB | footprint peak 8.73 GiB
+{
+ "dtype": "torch.bfloat16",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 21,
+ "median_time_to_first_token_s": 0.3758,
+ "median_vision_encoder_projector_s": 0.08,
+ "median_decode_tokens_per_s": 14.55,
+ "median_total_s": 1.82,
+ "weights_GiB": 7.54,
+ "peak_mps_allocated_GiB": 7.67,
+ "peak_mps_driver_GiB": 8.36,
+ "process_lifetime_peak_footprint_GiB": 8.73
+}
+wrote reports/phase2/bench_bf16.json
+W1105 21:26:24.735000 86749 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+  loaded model-00001-of-00004.safetensors (2.5s)
+  loaded model-00002-of-00004.safetensors (3.3s)
+  loaded model-00003-of-00004.safetensors (4.6s)
+  loaded model-00004-of-00004.safetensors (1.4s)
+model ready in 11.9s | weights 7.54 GiB | MPS allocated 7.55 GiB
+[warmup] ttft 0.511s (vision 0.203s) | decode 21 tok @ 14.44 tok/s | total 1.97s | MPS peak 7.66 GiB | footprint peak 8.72 GiB
+[run1] ttft 0.373s (vision 0.080s) | decode 21 tok @ 14.49 tok/s | total 1.82s | MPS peak 7.67 GiB | footprint peak 8.72 GiB
+{
+ "dtype": "torch.float16",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 21,
+ "median_time_to_first_token_s": 0.3728,
+ "median_vision_encoder_projector_s": 0.0795,
+ "median_decode_tokens_per_s": 14.49,
+ "median_total_s": 1.8228,
+ "weights_GiB": 7.54,
+ "peak_mps_allocated_GiB": 7.67,
+ "peak_mps_driver_GiB": 8.36,
+ "process_lifetime_peak_footprint_GiB": 8.72
+}
+wrote reports/phase2/bench_fp16.json
+W1105 21:26:42.878000 86764 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+  loaded model-00001-of-00004.safetensors (2.3s)
+  loaded model-00002-of-00004.safetensors (1.8s)
+  loaded model-00003-of-00004.safetensors (3.3s)
+  loaded model-00004-of-00004.safetensors (1.2s)
+model ready in 8.7s | weights 15.08 GiB | MPS allocated 15.09 GiB
+[warmup] ttft 1.170s (vision 0.312s) | decode 21 tok @ 7.62 tok/s | total 3.93s | MPS peak 15.32 GiB | footprint peak 16.37 GiB
+[run1] ttft 0.907s (vision 0.168s) | decode 21 tok @ 7.62 tok/s | total 3.66s | MPS peak 15.32 GiB | footprint peak 16.37 GiB
+{
+ "dtype": "torch.float32",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 21,
+ "median_time_to_first_token_s": 0.9074,
+ "median_vision_encoder_projector_s": 0.168,
+ "median_decode_tokens_per_s": 7.62,
+ "median_total_s": 3.6631,
+ "weights_GiB": 15.08,
+ "peak_mps_allocated_GiB": 15.32,
+ "peak_mps_driver_GiB": 16.01,
+ "process_lifetime_peak_footprint_GiB": 16.37
+}
+wrote reports/phase2/bench_fp32.json
+W1105 21:27:01.650000 86779 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+  loaded model-00001-of-00004.safetensors (2.5s)
+  loaded model-00002-of-00004.safetensors (2.5s)
+  loaded model-00003-of-00004.safetensors (1.5s)
+  loaded model-00004-of-00004.safetensors (0.9s)
+model ready in 7.6s | weights 7.54 GiB | MPS allocated 7.55 GiB
+[warmup] ttft 0.524s (vision 0.204s) | decode 255 tok @ 14.38 tok/s | total 18.26s | MPS peak 7.77 GiB | footprint peak 8.72 GiB
+[run1] ttft 0.372s (vision 0.080s) | decode 255 tok @ 14.4 tok/s | total 18.08s | MPS peak 7.77 GiB | footprint peak 8.73 GiB
+{
+ "dtype": "torch.bfloat16",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 256,
+ "median_time_to_first_token_s": 0.3723,
+ "median_vision_encoder_projector_s": 0.08,
+ "median_decode_tokens_per_s": 14.4,
+ "median_total_s": 18.0775,
+ "weights_GiB": 7.54,
+ "peak_mps_allocated_GiB": 7.77,
+ "peak_mps_driver_GiB": 8.37,
+ "process_lifetime_peak_footprint_GiB": 8.73
+}
+wrote reports/phase2/bench_bf16_256tok.json
+== 5/8 numerics
+W1105 21:27:47.783000 86838 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+running cpu-fp32 ...
+  load 9.1s, compute 10.9s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-fp32 ...
+  load 6.2s, compute 4.8s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-bf16 ...
+  load 8.2s, compute 2.2s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-fp16 ...
+  load 3.6s, compute 2.2s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+
+reference: cpu-fp32
+mps-fp32   image-tokens cos 1.000000 | logits cos 1.000000 rel 0.0000 | top1 = top5 overlap 5/5 | greedy identical True (first divergence None)
+mps-bf16   image-tokens cos 0.999988 | logits cos 0.999876 rel 0.0163 | top1 = top5 overlap 4/5 | greedy identical True (first divergence None)
+mps-fp16   image-tokens cos 1.000000 | logits cos 0.999996 rel 0.0042 | top1 = top5 overlap 5/5 | greedy identical True (first divergence None)
+wrote reports/phase2/numerics.json
+== 6/8 official-code parity
+W1105 21:28:37.874000 86874 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+running official reference (CPU fp32): .venv-ref/bin/python3.11 scripts/upstream_reference.py --cases reports/phase2/parity/cases.json --out reports/phase2/parity/upstream
+reference stack: {'python': '3.11.18', 'torch': '2.2.1', 'transformers': '4.42.4', 'monai': '1.3.0', 'numpy': '1.26.4', 'device': 'cpu', 'dtype': 'float32'}
+.venv-ref/lib/python3.11/site-packages/monai/utils/deprecate_utils.py:221: FutureWarning: monai.networks.blocks.patchembedding PatchEmbeddingBlock.__init__:pos_embed: Argument `pos_embed` has been deprecated since version 1.2. It will be removed in version 1.4. please use `proj_type` instead.
+  warn_deprecated(argname, msg, warning_category)
+.venv-ref/lib/python3.11/site-packages/monai/utils/deprecate_utils.py:221: FutureWarning: monai.networks.nets.vit ViT.__init__:pos_embed: Argument `pos_embed` has been deprecated since version 1.2. It will be removed in version 1.4. please use `proj_type` instead.
+  warn_deprecated(argname, msg, warning_category)
+build_sam_vit_3d...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 19.34it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 19.36it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 19.34it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loaded official model (transformers_modules.models.modeling_m3d_lamed.LamedPhi3ForCausalLM, attn=eager) in 0.4s
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token.As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+You are not running the flash-attention implementation, expect numerical differences.
+[image_caption] 21 tokens, generate 9.51s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+[image_vqa_organ] 3 tokens, generate 3.54s: 'Kidney'
+[ct_caption] 42 tokens, generate 13.47s: 'Heterogeneously enhancing mass in the upper pole of the left kidney.Bony enlargement and coarse trabeculation in the right hemipelvis are seen on CT.'
+[ct_seg_liver] 9 tokens, generate 6.11s: 'The segmentation reveals  [SEG] .'
+[ct_seg_liver] seg mask voxels > 0: 62119
+done -> reports/phase2/parity/upstream
+reference done in 52s
+
+=== port mps-fp32 ===
+[image_caption ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 1.00e-05 | greedy IDENTICAL (21/21 tok)
+[image_vqa_organ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 6.00e-06 | greedy IDENTICAL (3/3 tok)
+[ct_caption    ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 1.00e-05 | greedy IDENTICAL (42/42 tok)
+[ct_seg_liver  ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 3.00e-06 | greedy IDENTICAL (9/9 tok) | seg Dice 1.0000 (62119/62119 vox)
+
+=== port mps-bf16 ===
+[image_caption ] ids = | img cos 0.999988 | TF argmax 100.00% cos 0.999087 (min 0.99696) rel 3.78e-02 | greedy IDENTICAL (21/21 tok)
+[image_vqa_organ] ids = | img cos 0.999988 | TF argmax 100.00% cos 0.999841 (min 0.99964) rel 1.56e-02 | greedy IDENTICAL (3/3 tok)
+[ct_caption    ] ids = | img cos 0.999990 | TF argmax 100.00% cos 0.999092 (min 0.99643) rel 3.73e-02 | greedy IDENTICAL (42/42 tok)
+[ct_seg_liver  ] ids = | img cos 0.999990 | TF argmax 100.00% cos 0.999936 (min 0.99972) rel 1.11e-02 | greedy IDENTICAL (9/9 tok) | seg Dice 0.9989 (62131/62119 vox)
+
+=== port mps-fp16 ===
+[image_caption ] ids = | img cos 1.000000 | TF argmax 100.00% cos 0.999989 (min 0.99996) rel 4.28e-03 | greedy IDENTICAL (21/21 tok)
+[image_vqa_organ] ids = | img cos 1.000000 | TF argmax 100.00% cos 0.999996 (min 0.99999) rel 2.47e-03 | greedy IDENTICAL (3/3 tok)
+[ct_caption    ] ids = | img cos 1.000000 | TF argmax 100.00% cos 0.999987 (min 0.99997) rel 4.64e-03 | greedy IDENTICAL (42/42 tok)
+[ct_seg_liver  ] ids = | img cos 1.000000 | TF argmax 100.00% cos 0.999999 (min 1.00000) rel 1.30e-03 | greedy IDENTICAL (9/9 tok) | seg Dice 0.9999 (62119/62119 vox)
+
+=== port cpu-fp32 ===
+[image_caption ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 1.00e-05 | greedy IDENTICAL (21/21 tok)
+[image_vqa_organ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 5.00e-06 | greedy IDENTICAL (3/3 tok)
+[ct_caption    ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 9.00e-06 | greedy IDENTICAL (42/42 tok)
+[ct_seg_liver  ] ids = | img cos 1.000000 | TF argmax 100.00% cos 1.000000 (min 1.00000) rel 2.00e-06 | greedy IDENTICAL (9/9 tok) | seg Dice 1.0000 (62119/62119 vox)
+
+reference (official, CPU fp32) outputs:
+  image_caption: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+  image_vqa_organ: 'Kidney'
+  ct_caption: 'Heterogeneously enhancing mass in the upper pole of the left kidney.Bony enlargement and coarse trabeculation in the right hemipelvis are seen on CT.'
+  ct_seg_liver: 'The segmentation reveals  [SEG] .'
+wrote reports/phase2/parity/parity.json
+== 7/8 segmentation (official example CT)
+W1105 21:31:17.934000 87077 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+preprocessed upstream/M3D/Data/data/examples/example_03.npy -> (1, 32, 256, 256) in 0.05s (crop (), clip None)
+loading checkpoint (bf16) ...
+  loaded model-00001-of-00004.safetensors (1.7s)
+  loaded model-00002-of-00004.safetensors (2.1s)
+  loaded model-00003-of-00004.safetensors (2.5s)
+  loaded model-00004-of-00004.safetensors (2.0s)
+loaded 617/617 tensors (16.196 GB, source {'float32': 617} -> bfloat16) in 8.26s; MPS allocated 7.55 GiB
+
+=== question ===
+What is liver in this image? Please output the segmentation mask.
+=== M3D-LaMed answer ===
+The segmentation reveals  [SEG] .
+
+time to first token 0.5546s (vision encoder+projector 0.217s) | 9 new tokens | decode 11.86 tok/s | generate total 1.4234s
+memory: MPS peak allocated 7.79 GiB, MPS driver peak 8.37 GiB, process peak footprint 8.85 GiB
+device audit: PASS - 22288 compute ops on MPS, CPU compute ops: none, host<->device copies: {'to': 32, 'copy_': 10}
+segmentation: logits (1, 1, 32, 256, 256), mask voxels 62131
+segmentation montage: reports/phase2/ct_seg_liver_montage.png
+wrote reports/phase2/ct_seg_liver_bf16.json
+W1105 21:31:30.078000 87096 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+  loaded model-00001-of-00004.safetensors (1.4s)
+  loaded model-00002-of-00004.safetensors (0.4s)
+  loaded model-00003-of-00004.safetensors (0.5s)
+  loaded model-00004-of-00004.safetensors (0.5s)
+model ready in 3.0s | weights 7.54 GiB | MPS allocated 7.55 GiB
+[warmup] ttft 0.511s (vision 0.195s) | decode 9 tok @ 14.67 tok/s | total 1.22s | MPS peak 7.79 GiB | footprint peak 9.03 GiB
+[run1] ttft 0.371s (vision 0.080s) | decode 9 tok @ 14.41 tok/s | total 1.09s | MPS peak 7.79 GiB | footprint peak 9.04 GiB
+[run2] ttft 0.391s (vision 0.080s) | decode 9 tok @ 13.82 tok/s | total 1.13s | MPS peak 7.79 GiB | footprint peak 9.04 GiB
+[run3] ttft 0.373s (vision 0.080s) | decode 9 tok @ 14.68 tok/s | total 1.08s | MPS peak 7.76 GiB | footprint peak 9.04 GiB
+{
+ "dtype": "torch.bfloat16",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 9,
+ "median_time_to_first_token_s": 0.3735,
+ "median_vision_encoder_projector_s": 0.0796,
+ "median_decode_tokens_per_s": 14.41,
+ "median_total_s": 1.0879,
+ "median_segmentation_s": 0.0899,
+ "weights_GiB": 7.54,
+ "peak_mps_allocated_GiB": 7.79,
+ "peak_mps_driver_GiB": 8.37,
+ "process_lifetime_peak_footprint_GiB": 9.04
+}
+wrote reports/phase2/bench_bf16_seg.json
+== 8/8 orientation sensitivity
+   skipped: upstream/M3D/Data/data/examples/example_05.npy is already preprocessed (orientation applies to NIfTI/DICOM input only)
+Phase 2 complete -> reports/phase2

@@ -1,0 +1,32 @@
+.venv/
+.hf_home/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# checkpoint (16 GB) - downloaded by scripts/download_weights.sh
+models/*
+!models/.gitkeep
+
+# official repository clone (re-created by scripts/fetch_upstream.sh)
+upstream/M3D/
+
+# large/derived artefacts
+reports/**/*.npy
+reports/**/*.png
+
+# local imaging data and private analyses (never commit or upload)
+real-mri/
+private/
+
+# reference environment for scripts/upstream_reference.py (scripts/setup_reference_env.sh)
+.venv-ref/
+reports/**/*.npz
+# per-scan batch outputs list local scan file names (keep local)
+reports/**/batch/*.jsonl
+reports/**/batch/*.log
+
+# private notes, not part of the project
+deep-research-report.md

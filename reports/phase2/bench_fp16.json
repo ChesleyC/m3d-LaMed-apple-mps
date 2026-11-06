@@ -1,0 +1,154 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "synthetic": false,
+  "model_dir": null,
+  "component": "full",
+  "dtype": "fp16",
+  "attn": "sdpa",
+  "image": "upstream/M3D/Data/data/examples/example_05.npy",
+  "question": "Can you provide a caption consists of findings for this medical image?",
+  "task": "caption",
+  "max_new_tokens": 256,
+  "min_new_tokens": null,
+  "seg": false,
+  "runs": 1,
+  "warmup": 1,
+  "audit": false,
+  "json_out": "reports/phase2/bench_fp16.json"
+ },
+ "load": {
+  "model_dir": "models",
+  "revision_expected": "329bed510c2cff0ad3fe6f2a1a7075f45e2706e9",
+  "load": {
+   "ok": true,
+   "loaded": 617,
+   "expected": 617,
+   "missing": [],
+   "unexpected": [],
+   "shape_mismatch": [],
+   "source_dtypes": {
+    "float32": 617
+   },
+   "target_dtype": "float16",
+   "gb_read": 16.196,
+   "seconds": 11.81
+  },
+  "total_load_seconds": 11.85,
+  "dtype": "torch.float16",
+  "device": "mps",
+  "attn_implementation": "sdpa",
+  "weights_bytes": 8098201504,
+  "after_load": {
+   "mps_current_allocated": 8105755648,
+   "mps_driver_allocated": 8976269312,
+   "phys_footprint": 9316599056,
+   "lifetime_max_phys_footprint": 9324284040,
+   "resident_size": 660062208
+  }
+ },
+ "preprocess": {
+  "source": "upstream/M3D/Data/data/examples/example_05.npy",
+  "source_format": "npy",
+  "original_shape": [
+   1,
+   32,
+   256,
+   256
+  ],
+  "original_spacing": [],
+  "orientation": "as-stored",
+  "reverse_slices": false,
+  "clip_percentiles": null,
+  "clip_values": null,
+  "crop_box": [],
+  "cropped_shape": [],
+  "output_shape": [
+   32,
+   256,
+   256
+  ],
+  "passthrough": true,
+  "notes": [
+   "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+  ]
+ },
+ "runs": [
+  {
+   "text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.",
+   "output_ids": [
+    1939,
+    1274,
+    1082,
+    285,
+    1461,
+    545,
+    29889,
+    19077,
+    4639,
+    26311,
+    26637,
+    297,
+    385,
+    9642,
+    16157,
+    12944,
+    20373,
+    363,
+    3407,
+    29889,
+    32000
+   ],
+   "question": "Can you provide a caption consists of findings for this medical image?",
+   "prompt_tokens": 272,
+   "new_tokens": 21,
+   "timings": {
+    "total_s": 1.8228,
+    "vision_encoder_projector_s": 0.0795,
+    "time_to_first_token_s": 0.3728,
+    "decode_s": 1.4494,
+    "decode_tokens": 21,
+    "decode_tokens_per_s": 14.49,
+    "end_to_end_tokens_per_s": 11.52
+   },
+   "memory": {
+    "mps_peak_allocated": 8230719744,
+    "mps_peak_driver_allocated": 8978710528,
+    "samples": 733,
+    "mps_current_allocated": 8109952512,
+    "mps_driver_allocated": 8978694144,
+    "phys_footprint": 9362064920,
+    "lifetime_max_phys_footprint": 9362818584,
+    "resident_size": 865239040
+   },
+   "audit": null
+  }
+ ],
+ "summary": {
+  "dtype": "torch.float16",
+  "weights": "pretrained",
+  "prompt_tokens": 272,
+  "new_tokens": 21,
+  "median_time_to_first_token_s": 0.3728,
+  "median_vision_encoder_projector_s": 0.0795,
+  "median_decode_tokens_per_s": 14.49,
+  "median_total_s": 1.8228,
+  "weights_GiB": 7.54,
+  "peak_mps_allocated_GiB": 7.67,
+  "peak_mps_driver_GiB": 8.36,
+  "process_lifetime_peak_footprint_GiB": 8.72
+ }
+}

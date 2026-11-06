@@ -1,0 +1,7 @@
+-r requirements.txt
+# Test-only reference implementations (never imported by m3d_lamed_mps at runtime)
+pytest==9.2.0
+monai==1.6.1
+einops==0.8.2
+nibabel==5.4.2
+accelerate==1.15.0

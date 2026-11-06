@@ -1,0 +1,19 @@
+preprocessed upstream/M3D/Data/data/examples/example_03.npy -> (1, 32, 256, 256) in 0.05s (crop (), clip None)
+loading checkpoint (bf16) ...
+  loaded model-00001-of-00004.safetensors (1.7s)
+  loaded model-00002-of-00004.safetensors (2.1s)
+  loaded model-00003-of-00004.safetensors (2.5s)
+  loaded model-00004-of-00004.safetensors (2.0s)
+loaded 617/617 tensors (16.196 GB, source {'float32': 617} -> bfloat16) in 8.26s; MPS allocated 7.55 GiB
+
+=== question ===
+What is liver in this image? Please output the segmentation mask.
+=== M3D-LaMed answer ===
+The segmentation reveals  [SEG] .
+
+time to first token 0.5546s (vision encoder+projector 0.217s) | 9 new tokens | decode 11.86 tok/s | generate total 1.4234s
+memory: MPS peak allocated 7.79 GiB, MPS driver peak 8.37 GiB, process peak footprint 8.85 GiB
+device audit: PASS - 22288 compute ops on MPS, CPU compute ops: none, host<->device copies: {'to': 32, 'copy_': 10}
+segmentation: logits (1, 1, 32, 256, 256), mask voxels 62131
+segmentation montage: reports/phase2/ct_seg_liver_montage.png
+wrote reports/phase2/ct_seg_liver_bf16.json

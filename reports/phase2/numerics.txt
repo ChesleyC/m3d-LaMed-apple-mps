@@ -1,0 +1,14 @@
+running cpu-fp32 ...
+  load 9.1s, compute 10.9s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-fp32 ...
+  load 6.2s, compute 4.8s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-bf16 ...
+  load 8.2s, compute 2.2s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+running mps-fp16 ...
+  load 3.6s, compute 2.2s: 'No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.'
+
+reference: cpu-fp32
+mps-fp32   image-tokens cos 1.000000 | logits cos 1.000000 rel 0.0000 | top1 = top5 overlap 5/5 | greedy identical True (first divergence None)
+mps-bf16   image-tokens cos 0.999988 | logits cos 0.999876 rel 0.0163 | top1 = top5 overlap 4/5 | greedy identical True (first divergence None)
+mps-fp16   image-tokens cos 1.000000 | logits cos 0.999996 rel 0.0042 | top1 = top5 overlap 5/5 | greedy identical True (first divergence None)
+wrote reports/phase2/numerics.json

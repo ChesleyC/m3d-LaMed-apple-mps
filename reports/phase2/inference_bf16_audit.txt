@@ -1,0 +1,17 @@
+preprocessed upstream/M3D/Data/data/examples/example_05.npy -> (1, 32, 256, 256) in 0.03s (crop (), clip None)
+loading checkpoint (bf16) ...
+  loaded model-00001-of-00004.safetensors (5.0s)
+  loaded model-00002-of-00004.safetensors (3.6s)
+  loaded model-00003-of-00004.safetensors (5.0s)
+  loaded model-00004-of-00004.safetensors (1.6s)
+loaded 617/617 tensors (16.196 GB, source {'float32': 617} -> bfloat16) in 15.23s; MPS allocated 7.55 GiB
+
+=== question ===
+Can you provide a caption consists of findings for this medical image?
+=== M3D-LaMed answer ===
+No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.
+
+time to first token 0.5565s (vision encoder+projector 0.2209s) | 21 new tokens | decode 11.25 tok/s | generate total 2.424s
+memory: MPS peak allocated 7.67 GiB, MPS driver peak 8.36 GiB, process peak footprint 8.74 GiB
+device audit: PASS - 47352 compute ops on MPS, CPU compute ops: none, host<->device copies: {'to': 32, 'copy_': 22}
+wrote reports/phase2/inference_bf16_audit.json

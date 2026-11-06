@@ -1,0 +1,41 @@
+{
+ "reference": "cpu-fp32",
+ "question": "Can you provide a caption consists of findings for this medical image?",
+ "new_tokens": 64,
+ "comparisons": {
+  "mps-fp32": {
+   "image_tokens_cos": 1.0,
+   "image_tokens_rel_err": 0.0,
+   "logits_cos": 1.0,
+   "logits_rel_err": 0.0,
+   "top1_equal": true,
+   "top5_overlap": 5,
+   "greedy_identical": true,
+   "greedy_first_divergence": null,
+   "text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference."
+  },
+  "mps-bf16": {
+   "image_tokens_cos": 0.999988,
+   "image_tokens_rel_err": 0.00485,
+   "logits_cos": 0.999876,
+   "logits_rel_err": 0.01625,
+   "top1_equal": true,
+   "top5_overlap": 4,
+   "greedy_identical": true,
+   "greedy_first_divergence": null,
+   "text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference."
+  },
+  "mps-fp16": {
+   "image_tokens_cos": 1.0,
+   "image_tokens_rel_err": 0.00057,
+   "logits_cos": 0.999996,
+   "logits_rel_err": 0.00419,
+   "top1_equal": true,
+   "top5_overlap": 5,
+   "greedy_identical": true,
+   "greedy_first_divergence": null,
+   "text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference."
+  }
+ },
+ "reference_text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference."
+}

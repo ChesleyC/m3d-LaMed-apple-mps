@@ -1,0 +1,22 @@
+  loaded model-00001-of-00004.safetensors (2.5s)
+  loaded model-00002-of-00004.safetensors (2.5s)
+  loaded model-00003-of-00004.safetensors (1.5s)
+  loaded model-00004-of-00004.safetensors (0.9s)
+model ready in 7.6s | weights 7.54 GiB | MPS allocated 7.55 GiB
+[warmup] ttft 0.524s (vision 0.204s) | decode 255 tok @ 14.38 tok/s | total 18.26s | MPS peak 7.77 GiB | footprint peak 8.72 GiB
+[run1] ttft 0.372s (vision 0.080s) | decode 255 tok @ 14.4 tok/s | total 18.08s | MPS peak 7.77 GiB | footprint peak 8.73 GiB
+{
+ "dtype": "torch.bfloat16",
+ "weights": "pretrained",
+ "prompt_tokens": 272,
+ "new_tokens": 256,
+ "median_time_to_first_token_s": 0.3723,
+ "median_vision_encoder_projector_s": 0.08,
+ "median_decode_tokens_per_s": 14.4,
+ "median_total_s": 18.0775,
+ "weights_GiB": 7.54,
+ "peak_mps_allocated_GiB": 7.77,
+ "peak_mps_driver_GiB": 8.37,
+ "process_lifetime_peak_footprint_GiB": 8.73
+}
+wrote reports/phase2/bench_bf16_256tok.json

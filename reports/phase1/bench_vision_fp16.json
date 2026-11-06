@@ -1,0 +1,61 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "synthetic": false,
+  "model_dir": null,
+  "component": "vision",
+  "dtype": "fp16",
+  "attn": "sdpa",
+  "image": null,
+  "question": null,
+  "max_new_tokens": 256,
+  "min_new_tokens": null,
+  "seg": false,
+  "runs": 5,
+  "warmup": 2,
+  "audit": false,
+  "json_out": "reports/phase1/bench_vision_fp16.json"
+ },
+ "result": {
+  "component": "vision",
+  "dtype": "torch.float16",
+  "output_shape": [
+   1,
+   256,
+   3072
+  ],
+  "params_M": 99.19,
+  "latency_s": {
+   "median": 0.0798,
+   "min": 0.0794,
+   "runs": [
+    0.0799,
+    0.0794,
+    0.0794,
+    0.0798,
+    0.0798
+   ]
+  },
+  "memory": {
+   "mps_peak_allocated": 232396800,
+   "mps_peak_driver_allocated": 313229312,
+   "samples": 215,
+   "phys_footprint": 666535496,
+   "lifetime_max_phys_footprint": 754533744,
+   "resident_size": 907902976
+  }
+ }
+}

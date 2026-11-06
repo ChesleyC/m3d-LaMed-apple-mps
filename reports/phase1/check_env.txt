@@ -1,0 +1,15 @@
+{
+ "macos": "26.0",
+ "machine": "arm64",
+ "chip": "Apple M5",
+ "memory_bytes": 34359738368,
+ "gpu_cores": 10,
+ "python": "3.13.5",
+ "torch": "2.15.0",
+ "transformers": "5.22.1",
+ "mps_built": true,
+ "mps_available": true,
+ "mps_fallback_env": "0",
+ "mps_recommended_max_memory": 26800603136
+}
+OK: MPS ready (bf16 matmul works), recommended GPU working set 24.96 GiB, CPU fallback disabled

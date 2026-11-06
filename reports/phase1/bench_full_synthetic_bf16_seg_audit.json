@@ -1,0 +1,158 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "synthetic": true,
+  "model_dir": null,
+  "component": "full",
+  "dtype": "bf16",
+  "attn": "sdpa",
+  "image": null,
+  "question": null,
+  "max_new_tokens": 32,
+  "min_new_tokens": null,
+  "seg": true,
+  "runs": 1,
+  "warmup": 1,
+  "audit": true,
+  "json_out": "reports/phase1/bench_full_synthetic_bf16_seg_audit.json"
+ },
+ "load": {
+  "weights": "synthetic (random)",
+  "seconds": 0.34,
+  "weights_bytes": 8098201504,
+  "after_load": {
+   "mps_current_allocated": 8105755648,
+   "mps_driver_allocated": 8976285696,
+   "phys_footprint": 9301755008,
+   "lifetime_max_phys_footprint": 9302705280,
+   "resident_size": 482869248
+  }
+ },
+ "runs": [
+  {
+   "text": "itherptaptaptaptaptaptaptaptaptaptaCallbackitherptaCallback FurtheritherptaCallbackitheritherhreCallbackitheritheritheritheritheritheritheritherither",
+   "output_ids": [
+    2121,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    28363,
+    10717,
+    2121,
+    28363,
+    10717,
+    8725,
+    2121,
+    28363,
+    10717,
+    2121,
+    2121,
+    16720,
+    10717,
+    2121,
+    2121,
+    2121,
+    2121,
+    2121,
+    2121,
+    2121,
+    2121,
+    2121
+   ],
+   "question": "Can you provide a caption consists of findings for this medical image?",
+   "prompt_tokens": 272,
+   "new_tokens": 32,
+   "timings": {
+    "total_s": 3.011,
+    "vision_encoder_projector_s": 0.0821,
+    "time_to_first_token_s": 0.3917,
+    "decode_s": 2.5254,
+    "decode_tokens": 31,
+    "decode_tokens_per_s": 12.28,
+    "end_to_end_tokens_per_s": 10.63,
+    "segmentation_s": 0.0939
+   },
+   "memory": {
+    "mps_peak_allocated": 8362213120,
+    "mps_peak_driver_allocated": 8996618240,
+    "samples": 1022,
+    "mps_current_allocated": 8118898176,
+    "mps_driver_allocated": 8996601856,
+    "phys_footprint": 9352545480,
+    "lifetime_max_phys_footprint": 9352758472,
+    "resident_size": 525090816
+   },
+   "audit": {
+    "ok": true,
+    "mps_compute_ops": 69401,
+    "distinct_mps_ops": 65,
+    "top_mps_ops": {
+     "slice": 11431,
+     "mul": 9442,
+     "add": 6345,
+     "cat": 6248,
+     "to": 4358,
+     "linear": 4276,
+     "transpose": 4152,
+     "view": 3134,
+     "dropout": 2122,
+     "unsqueeze": 2116,
+     "pow": 2080,
+     "mean": 2080
+    },
+    "host_device_transfers": {
+     "to": 32,
+     "copy_": 32
+    },
+    "cpu_compute_ops": {},
+    "cpu_scalar_ops": {
+     "lift_fresh": 32,
+     "detach_": 32,
+     "zeros": 4,
+     "is_nonzero": 31
+    },
+    "other_device_ops": {}
+   },
+   "seg_logits_shape": [
+    1,
+    1,
+    32,
+    256,
+    256
+   ]
+  }
+ ],
+ "summary": {
+  "dtype": "torch.bfloat16",
+  "weights": "synthetic",
+  "prompt_tokens": 272,
+  "new_tokens": 32,
+  "median_time_to_first_token_s": 0.3917,
+  "median_vision_encoder_projector_s": 0.0821,
+  "median_decode_tokens_per_s": 12.28,
+  "median_total_s": 3.011,
+  "weights_GiB": 7.54,
+  "peak_mps_allocated_GiB": 7.79,
+  "peak_mps_driver_GiB": 8.38,
+  "process_lifetime_peak_footprint_GiB": 8.71
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "image": "upstream/M3D/Data/data/examples/example_03.npy",
+  "model_dir": null,
+  "question": "What is liver in this image? Please output the segmentation mask.",
+  "task": "seg",
+  "dtype": "bf16",
+  "attn": "sdpa",
+  "max_new_tokens": 256,
+  "do_sample": false,
+  "top_p": 0.9,
+  "temperature": 1.0,
+  "seed": 0,
+  "orientation": "radiological",
+  "reverse_slices": false,
+  "clip": [
+   0.5,
+   99.5
+  ],
+  "no_clip": false,
+  "seg": true,
+  "seg_out": "reports/phase2/ct_seg_liver_mask.npy",
+  "seg_montage": "reports/phase2/ct_seg_liver_montage.png",
+  "audit": true,
+  "montage": null,
+  "save_preprocessed": null,
+  "json_out": "reports/phase2/ct_seg_liver_bf16.json"
+ },
+ "preprocess": {
+  "source": "upstream/M3D/Data/data/examples/example_03.npy",
+  "source_format": "npy",
+  "original_shape": [
+   1,
+   32,
+   256,
+   256
+  ],
+  "original_spacing": [],
+  "orientation": "as-stored",
+  "reverse_slices": false,
+  "clip_percentiles": null,
+  "clip_values": null,
+  "crop_box": [],
+  "cropped_shape": [],
+  "output_shape": [
+   32,
+   256,
+   256
+  ],
+  "passthrough": true,
+  "notes": [
+   "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+  ],
+  "seconds": 0.049
+ },
+ "load": {
+  "model_dir": "models",
+  "revision_expected": "329bed510c2cff0ad3fe6f2a1a7075f45e2706e9",
+  "load": {
+   "ok": true,
+   "loaded": 617,
+   "expected": 617,
+   "missing": [],
+   "unexpected": [],
+   "shape_mismatch": [],
+   "source_dtypes": {
+    "float32": 617
+   },
+   "target_dtype": "bfloat16",
+   "gb_read": 16.196,
+   "seconds": 8.22
+  },
+  "total_load_seconds": 8.26,
+  "dtype": "torch.bfloat16",
+  "device": "mps",
+  "attn_implementation": "sdpa"
+ },
+ "result": {
+  "text": "The segmentation reveals  [SEG] .",
+  "output_ids": [
+   450,
+   10768,
+   362,
+   10320,
+   1338,
+   29871,
+   32014,
+   29889,
+   32000
+  ],
+  "question": "What is liver in this image? Please output the segmentation mask.",
+  "prompt_tokens": 272,
+  "new_tokens": 9,
+  "timings": {
+   "total_s": 1.4234,
+   "vision_encoder_projector_s": 0.217,
+   "time_to_first_token_s": 0.5546,
+   "decode_s": 0.7587,
+   "decode_tokens": 9,
+   "decode_tokens_per_s": 11.86,
+   "end_to_end_tokens_per_s": 6.32,
+   "segmentation_s": 0.1101
+  },
+  "memory": {
+   "mps_peak_allocated": 8364375808,
+   "mps_peak_driver_allocated": 8988180480,
+   "samples": 572,
+   "mps_current_allocated": 8114146816,
+   "mps_driver_allocated": 8988180480,
+   "phys_footprint": 9506834040,
+   "lifetime_max_phys_footprint": 9506883216,
+   "resident_size": 573243392
+  },
+  "audit": {
+   "ok": true,
+   "mps_compute_ops": 22288,
+   "distinct_mps_ops": 64,
+   "top_mps_ops": {
+    "slice": 3642,
+    "mul": 2952,
+    "add": 2033,
+    "cat": 1958,
+    "linear": 1440,
+    "to": 1366,
+    "transpose": 1336,
+    "view": 1000,
+    "dropout": 715,
+    "unsqueeze": 664,
+    "pow": 650,
+    "mean": 650
+   },
+   "host_device_transfers": {
+    "to": 32,
+    "copy_": 10
+   },
+   "cpu_compute_ops": {},
+   "cpu_scalar_ops": {
+    "lift_fresh": 32,
+    "detach_": 32,
+    "zeros": 4,
+    "is_nonzero": 9
+   },
+   "other_device_ops": {}
+  },
+  "seg_logits_shape": [
+   1,
+   1,
+   32,
+   256,
+   256
+  ]
+ },
+ "final_footprint": {
+  "phys_footprint": 9505801848,
+  "lifetime_max_phys_footprint": 9515222648,
+  "resident_size": 589348864
+ }
+}

@@ -1,0 +1,7485 @@
+{
+"transformers": "4.42.4",
+"tokenizer": "LlamaTokenizer(use_fast=False) from revision 329bed5",
+"note": "prompt cases: ids == [1] + [32011]*256 + ids_after_image_tokens",
+"cases": [
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a caption consists of findings for this medical image?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a caption consists of findings for this medical image?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe the findings of the medical image you see.",
+"ids_after_image_tokens": [
+4002,
+29581,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe the findings of the medical image you see.",
+"ids_after_image_tokens": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please caption this medical scan with findings.",
+"ids_after_image_tokens": [
+12148,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please caption this medical scan with findings.",
+"ids_after_image_tokens": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What is the findings of this image?",
+"ids_after_image_tokens": [
+5618,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What is the findings of this image?",
+"ids_after_image_tokens": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe this medical scan with findings.",
+"ids_after_image_tokens": [
+4002,
+29581,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe this medical scan with findings.",
+"ids_after_image_tokens": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please write a caption consists of findings for this image.",
+"ids_after_image_tokens": [
+12148,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please write a caption consists of findings for this image.",
+"ids_after_image_tokens": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you summarize with findings the images presented?",
+"ids_after_image_tokens": [
+6028,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you summarize with findings the images presented?",
+"ids_after_image_tokens": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please caption this scan with findings.",
+"ids_after_image_tokens": [
+12148,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please caption this scan with findings.",
+"ids_after_image_tokens": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please provide a caption consists of findings for this medical image.",
+"ids_after_image_tokens": [
+12148,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please provide a caption consists of findings for this medical image.",
+"ids_after_image_tokens": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a summary consists of findings of this radiograph?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a summary consists of findings of this radiograph?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What are the findings presented in this medical scan?",
+"ids_after_image_tokens": [
+5618,
+526,
+278,
+1284,
+886,
+9132,
+297,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What are the findings presented in this medical scan?",
+"ids_after_image_tokens": [
+1724,
+526,
+278,
+1284,
+886,
+9132,
+297,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please write a caption consists of findings for this scan.",
+"ids_after_image_tokens": [
+12148,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please write a caption consists of findings for this scan.",
+"ids_after_image_tokens": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a description consists of findings of this medical scan?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+6139,
+11624,
+310,
+1284,
+886,
+310,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a description consists of findings of this medical scan?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+6139,
+11624,
+310,
+1284,
+886,
+310,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please caption this medical scan with findings.",
+"ids_after_image_tokens": [
+12148,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please caption this medical scan with findings.",
+"ids_after_image_tokens": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a caption consists of findings for this medical scan?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a caption consists of findings for this medical scan?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please generate a medical report based on this image.",
+"ids_after_image_tokens": [
+12148,
+5706,
+263,
+16083,
+3461,
+2729,
+373,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please generate a medical report based on this image.",
+"ids_after_image_tokens": [
+3529,
+5706,
+263,
+16083,
+3461,
+2729,
+373,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you generate a diagnose report from this image.",
+"ids_after_image_tokens": [
+6028,
+366,
+5706,
+263,
+24876,
+852,
+3461,
+515,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you generate a diagnose report from this image.",
+"ids_after_image_tokens": [
+1815,
+366,
+5706,
+263,
+24876,
+852,
+3461,
+515,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Could you analyze and provide a caption for the findings in this medical image?",
+"ids_after_image_tokens": [
+23323,
+366,
+27599,
+322,
+3867,
+263,
+5777,
+683,
+363,
+278,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Could you analyze and provide a caption for the findings in this medical image?",
+"ids_after_image_tokens": [
+6527,
+366,
+27599,
+322,
+3867,
+263,
+5777,
+683,
+363,
+278,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please describe the observations depicted in this medical scan.",
+"ids_after_image_tokens": [
+12148,
+8453,
+278,
+13917,
+1401,
+18186,
+297,
+445,
+16083,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please describe the observations depicted in this medical scan.",
+"ids_after_image_tokens": [
+3529,
+8453,
+278,
+13917,
+1401,
+18186,
+297,
+445,
+16083,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you summarize the findings of this image in a caption?",
+"ids_after_image_tokens": [
+6028,
+366,
+19138,
+675,
+278,
+1284,
+886,
+310,
+445,
+1967,
+297,
+263,
+5777,
+683,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you summarize the findings of this image in a caption?",
+"ids_after_image_tokens": [
+1815,
+366,
+19138,
+675,
+278,
+1284,
+886,
+310,
+445,
+1967,
+297,
+263,
+5777,
+683,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What are the significant findings in this medical image?",
+"ids_after_image_tokens": [
+5618,
+526,
+278,
+7282,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What are the significant findings in this medical image?",
+"ids_after_image_tokens": [
+1724,
+526,
+278,
+7282,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please provide a detailed caption outlining the findings of this image.",
+"ids_after_image_tokens": [
+12148,
+3867,
+263,
+13173,
+5777,
+683,
+714,
+1915,
+292,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please provide a detailed caption outlining the findings of this image.",
+"ids_after_image_tokens": [
+3529,
+3867,
+263,
+13173,
+5777,
+683,
+714,
+1915,
+292,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Could you interpret and describe the findings shown in this medical scan?",
+"ids_after_image_tokens": [
+23323,
+366,
+6613,
+322,
+8453,
+278,
+1284,
+886,
+4318,
+297,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Could you interpret and describe the findings shown in this medical scan?",
+"ids_after_image_tokens": [
+6527,
+366,
+6613,
+322,
+8453,
+278,
+1284,
+886,
+4318,
+297,
+445,
+16083,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What conclusions can you draw from the observations in this image?",
+"ids_after_image_tokens": [
+5618,
+21204,
+1080,
+508,
+366,
+4216,
+515,
+278,
+13917,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What conclusions can you draw from the observations in this image?",
+"ids_after_image_tokens": [
+1724,
+21204,
+1080,
+508,
+366,
+4216,
+515,
+278,
+13917,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please write a descriptive caption based on the findings in this scan.",
+"ids_after_image_tokens": [
+12148,
+2436,
+263,
+29037,
+573,
+5777,
+683,
+2729,
+373,
+278,
+1284,
+886,
+297,
+445,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please write a descriptive caption based on the findings in this scan.",
+"ids_after_image_tokens": [
+3529,
+2436,
+263,
+29037,
+573,
+5777,
+683,
+2729,
+373,
+278,
+1284,
+886,
+297,
+445,
+12812,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What key findings can you identify from examining this medical image?",
+"ids_after_image_tokens": [
+5618,
+1820,
+1284,
+886,
+508,
+366,
+12439,
+515,
+4392,
+2827,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What key findings can you identify from examining this medical image?",
+"ids_after_image_tokens": [
+1724,
+1820,
+1284,
+886,
+508,
+366,
+12439,
+515,
+4392,
+2827,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Could you generate a detailed report based on the observations in this image?",
+"ids_after_image_tokens": [
+23323,
+366,
+5706,
+263,
+13173,
+3461,
+2729,
+373,
+278,
+13917,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Could you generate a detailed report based on the observations in this image?",
+"ids_after_image_tokens": [
+6527,
+366,
+5706,
+263,
+13173,
+3461,
+2729,
+373,
+278,
+13917,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a diagnosis based on the findings in this image?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+24876,
+19263,
+2729,
+373,
+278,
+1284,
+886,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a diagnosis based on the findings in this image?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+24876,
+19263,
+2729,
+373,
+278,
+1284,
+886,
+297,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Please generate a comprehensive report summarizing the findings in this image.",
+"ids_after_image_tokens": [
+12148,
+5706,
+263,
+15171,
+6270,
+3461,
+19138,
+5281,
+278,
+1284,
+886,
+297,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Please generate a comprehensive report summarizing the findings in this image.",
+"ids_after_image_tokens": [
+3529,
+5706,
+263,
+15171,
+6270,
+3461,
+19138,
+5281,
+278,
+1284,
+886,
+297,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Caption the findings in this medical image?",
+"ids_after_image_tokens": [
+26270,
+683,
+278,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Caption the findings in this medical image?",
+"ids_after_image_tokens": [
+9243,
+683,
+278,
+1284,
+886,
+297,
+445,
+16083,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe the findings you see.",
+"ids_after_image_tokens": [
+4002,
+29581,
+278,
+1284,
+886,
+366,
+1074,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe the findings you see.",
+"ids_after_image_tokens": [
+20355,
+915,
+278,
+1284,
+886,
+366,
+1074,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Caption this medical scan's findings.",
+"ids_after_image_tokens": [
+26270,
+683,
+445,
+16083,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Caption this medical scan's findings.",
+"ids_after_image_tokens": [
+9243,
+683,
+445,
+16083,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What are the findings here?",
+"ids_after_image_tokens": [
+5618,
+526,
+278,
+1284,
+886,
+1244,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What are the findings here?",
+"ids_after_image_tokens": [
+1724,
+526,
+278,
+1284,
+886,
+1244,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe these findings.",
+"ids_after_image_tokens": [
+4002,
+29581,
+1438,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe these findings.",
+"ids_after_image_tokens": [
+20355,
+915,
+1438,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Summarize the findings in these images.",
+"ids_after_image_tokens": [
+11139,
+3034,
+675,
+278,
+1284,
+886,
+297,
+1438,
+4558,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Summarize the findings in these images.",
+"ids_after_image_tokens": [
+6991,
+3034,
+675,
+278,
+1284,
+886,
+297,
+1438,
+4558,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Caption this scan's findings.",
+"ids_after_image_tokens": [
+26270,
+683,
+445,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Caption this scan's findings.",
+"ids_after_image_tokens": [
+9243,
+683,
+445,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Provide a caption for this medical image's findings.",
+"ids_after_image_tokens": [
+1184,
+29894,
+680,
+263,
+5777,
+683,
+363,
+445,
+16083,
+1967,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Provide a caption for this medical image's findings.",
+"ids_after_image_tokens": [
+9133,
+680,
+263,
+5777,
+683,
+363,
+445,
+16083,
+1967,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Summarize the findings of this radiograph.",
+"ids_after_image_tokens": [
+11139,
+3034,
+675,
+278,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Summarize the findings of this radiograph.",
+"ids_after_image_tokens": [
+6991,
+3034,
+675,
+278,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What findings are presented in this scan?",
+"ids_after_image_tokens": [
+5618,
+1284,
+886,
+526,
+9132,
+297,
+445,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What findings are presented in this scan?",
+"ids_after_image_tokens": [
+1724,
+1284,
+886,
+526,
+9132,
+297,
+445,
+12812,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe this scan's findings.",
+"ids_after_image_tokens": [
+4002,
+29581,
+445,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe this scan's findings.",
+"ids_after_image_tokens": [
+20355,
+915,
+445,
+12812,
+29915,
+29879,
+1284,
+886,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Generate a medical report based on this image.",
+"ids_after_image_tokens": [
+5631,
+403,
+263,
+16083,
+3461,
+2729,
+373,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Generate a medical report based on this image.",
+"ids_after_image_tokens": [
+3251,
+403,
+263,
+16083,
+3461,
+2729,
+373,
+445,
+1967,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Can you provide a diagnosis based on this image?",
+"ids_after_image_tokens": [
+6028,
+366,
+3867,
+263,
+24876,
+19263,
+2729,
+373,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Can you provide a diagnosis based on this image?",
+"ids_after_image_tokens": [
+1815,
+366,
+3867,
+263,
+24876,
+19263,
+2729,
+373,
+445,
+1967,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "What is liver in this image? Please output the segmentation mask.",
+"ids_after_image_tokens": [
+5618,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "What is liver in this image? Please output the segmentation mask.",
+"ids_after_image_tokens": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Where is brain in this image? Please output the box.",
+"ids_after_image_tokens": [
+11921,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Where is brain in this image? Please output the box.",
+"ids_after_image_tokens": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown",
+"ids_after_image_tokens": [
+3624,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown",
+"ids_after_image_tokens": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe.",
+"ids_after_image_tokens": [
+29911,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe.",
+"ids_after_image_tokens": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "The [SEG] token and numbers 12345 and émigré unicode.",
+"ids_after_image_tokens": [
+1576,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "The [SEG] token and numbers 12345 and émigré unicode.",
+"ids_after_image_tokens": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": " leading space question?",
+"ids_after_image_tokens": [
+8236,
+2913,
+1139,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": " leading space question?",
+"ids_after_image_tokens": [
+29871,
+8236,
+2913,
+1139,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "double  space   and\nnewline and\ttab?",
+"ids_after_image_tokens": [
+8896,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "double  space   and\nnewline and\ttab?",
+"ids_after_image_tokens": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "trailing space ",
+"ids_after_image_tokens": [
+3018,
+6504,
+2913,
+29871
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "trailing space ",
+"ids_after_image_tokens": [
+25053,
+2913,
+29871
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "Describe the brain MRI.<|end|>",
+"ids_after_image_tokens": [
+4002,
+29581,
+278,
+17294,
+341,
+3960,
+29889,
+32007
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "Describe the brain MRI.<|end|>",
+"ids_after_image_tokens": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "中文问题：这是什么？",
+"ids_after_image_tokens": [
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "中文问题：这是什么？",
+"ids_after_image_tokens": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "▁underscore-like ▁ char",
+"ids_after_image_tokens": [
+23400,
+3221,
+29899,
+4561,
+259,
+1373
+]
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "▁underscore-like ▁ char",
+"ids_after_image_tokens": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373
+]
+},
+{
+"kind": "prompt",
+"task": "caption",
+"question": "",
+"ids_after_image_tokens": []
+},
+{
+"kind": "prompt",
+"task": "vqa",
+"question": "",
+"ids_after_image_tokens": [
+29871
+]
+},
+{
+"kind": "plain",
+"text": "Hello world",
+"ids": [
+1,
+15043,
+3186
+]
+},
+{
+"kind": "plain",
+"text": " leading space",
+"ids": [
+1,
+29871,
+8236,
+2913
+]
+},
+{
+"kind": "plain",
+"text": "multiple   spaces\nnewline",
+"ids": [
+1,
+2999,
+259,
+8162,
+13,
+1482,
+1220
+]
+},
+{
+"kind": "plain",
+"text": "The ventricles are normal.",
+"ids": [
+1,
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889
+]
+},
+{
+"kind": "plain",
+"text": "[SEG]",
+"ids": [
+1,
+29871,
+32014
+]
+},
+{
+"kind": "plain",
+"text": "<|end|>x",
+"ids": [
+1,
+29871,
+32007,
+29916
+]
+},
+{
+"kind": "plain",
+"text": "a\n\nb",
+"ids": [
+1,
+263,
+13,
+13,
+29890
+]
+},
+{
+"kind": "plain",
+"text": "What is liver in this image? Please output the segmentation mask.",
+"ids": [
+1,
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889
+]
+},
+{
+"kind": "plain",
+"text": "Where is brain in this image? Please output the box.",
+"ids": [
+1,
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889
+]
+},
+{
+"kind": "plain",
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown",
+"ids": [
+1,
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203
+]
+},
+{
+"kind": "plain",
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe.",
+"ids": [
+1,
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889
+]
+},
+{
+"kind": "plain",
+"text": "The [SEG] token and numbers 12345 and émigré unicode.",
+"ids": [
+1,
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889
+]
+},
+{
+"kind": "plain",
+"text": " leading space question?",
+"ids": [
+1,
+29871,
+8236,
+2913,
+1139,
+29973
+]
+},
+{
+"kind": "plain",
+"text": "double  space   and\nnewline and\ttab?",
+"ids": [
+1,
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973
+]
+},
+{
+"kind": "plain",
+"text": "trailing space ",
+"ids": [
+1,
+25053,
+2913,
+29871
+]
+},
+{
+"kind": "plain",
+"text": "Describe the brain MRI.<|end|>",
+"ids": [
+1,
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007
+]
+},
+{
+"kind": "plain",
+"text": "中文问题：这是什么？",
+"ids": [
+1,
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882
+]
+},
+{
+"kind": "plain",
+"text": "▁underscore-like ▁ char",
+"ids": [
+1,
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373
+]
+},
+{
+"kind": "plain",
+"text": "",
+"ids": [
+1
+]
+}
+],
+"decodes": [
+{
+"ids": [
+450,
+9819,
+4495,
+29889,
+32007,
+32000
+],
+"skip_special_tokens": true,
+"text": "The resultingwar. <|end|>"
+},
+{
+"ids": [
+450,
+9819,
+4495,
+29889,
+32007,
+32000
+],
+"skip_special_tokens": false,
+"text": "The resultingwar. <|end|> <|endoftext|>"
+},
+{
+"ids": [
+29871,
+13,
+450,
+29871,
+13,
+32014,
+29889
+],
+"skip_special_tokens": true,
+"text": "\n The \n [SEG] ."
+},
+{
+"ids": [
+29871,
+13,
+450,
+29871,
+13,
+32014,
+29889
+],
+"skip_special_tokens": false,
+"text": "\n The \n [SEG] ."
+},
+{
+"ids": [
+1,
+32011,
+32011,
+6028,
+366,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you [SEG] ."
+},
+{
+"ids": [
+1,
+32011,
+32011,
+6028,
+366,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "<s> <im_patch> <im_patch> Can you [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+8236,
+29871,
+29871,
+2913
+],
+"skip_special_tokens": true,
+"text": "leading   space"
+},
+{
+"ids": [
+8236,
+29871,
+29871,
+2913
+],
+"skip_special_tokens": false,
+"text": "leading   space"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you provide a caption consists of findings for this medical image?"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you provide a caption consists of findings for this medical image?<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": "Can you provide a caption consists of findings for this medical image? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": "Can you provide a caption consists of findings for this medical image? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": "Can you provide a caption consists of findings for this medical image? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": "Can you provide a caption consists of findings for this medical image? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you provide a caption consists of findings for this medical image? [SEG] ."
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you provide a caption consists of findings for this medical image? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973
+],
+"skip_special_tokens": true,
+"text": "Can you provide a caption consists of findings for this medical image?"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29973
+],
+"skip_special_tokens": false,
+"text": "Can you provide a caption consists of findings for this medical image?"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe the findings of the medical image you see."
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe the findings of the medical image you see.<|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Describe the findings of the medical image you see. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Describe the findings of the medical image you see. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Describe the findings of the medical image you see. <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Describe the findings of the medical image you see. <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe the findings of the medical image you see. [SEG] ."
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe the findings of the medical image you see. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889
+],
+"skip_special_tokens": true,
+"text": "Describe the findings of the medical image you see."
+},
+{
+"ids": [
+20355,
+915,
+278,
+1284,
+886,
+310,
+278,
+16083,
+1967,
+366,
+1074,
+29889
+],
+"skip_special_tokens": false,
+"text": "Describe the findings of the medical image you see."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please caption this medical scan with findings."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please caption this medical scan with findings.<|endoftext|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Please caption this medical scan with findings. <|end|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Please caption this medical scan with findings. <|end|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Please caption this medical scan with findings. <|assistant|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Please caption this medical scan with findings. <|assistant|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please caption this medical scan with findings. [SEG] ."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please caption this medical scan with findings. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": true,
+"text": "Please caption this medical scan with findings."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": false,
+"text": "Please caption this medical scan with findings."
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": "What is the findings of this image?"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": "What is the findings of this image?<|endoftext|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": "What is the findings of this image? <|end|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": "What is the findings of this image? <|end|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": "What is the findings of this image? <|assistant|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": "What is the findings of this image? <|assistant|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "What is the findings of this image? [SEG] ."
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "What is the findings of this image? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973
+],
+"skip_special_tokens": true,
+"text": "What is the findings of this image?"
+},
+{
+"ids": [
+1724,
+338,
+278,
+1284,
+886,
+310,
+445,
+1967,
+29973
+],
+"skip_special_tokens": false,
+"text": "What is the findings of this image?"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe this medical scan with findings."
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe this medical scan with findings.<|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Describe this medical scan with findings. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Describe this medical scan with findings. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Describe this medical scan with findings. <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Describe this medical scan with findings. <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe this medical scan with findings. [SEG] ."
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe this medical scan with findings. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": true,
+"text": "Describe this medical scan with findings."
+},
+{
+"ids": [
+20355,
+915,
+445,
+16083,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": false,
+"text": "Describe this medical scan with findings."
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please write a caption consists of findings for this image."
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please write a caption consists of findings for this image.<|endoftext|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Please write a caption consists of findings for this image. <|end|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Please write a caption consists of findings for this image. <|end|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Please write a caption consists of findings for this image. <|assistant|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Please write a caption consists of findings for this image. <|assistant|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please write a caption consists of findings for this image. [SEG] ."
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please write a caption consists of findings for this image. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889
+],
+"skip_special_tokens": true,
+"text": "Please write a caption consists of findings for this image."
+},
+{
+"ids": [
+3529,
+2436,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+1967,
+29889
+],
+"skip_special_tokens": false,
+"text": "Please write a caption consists of findings for this image."
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you summarize with findings the images presented?"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you summarize with findings the images presented?<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": "Can you summarize with findings the images presented? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": "Can you summarize with findings the images presented? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": "Can you summarize with findings the images presented? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": "Can you summarize with findings the images presented? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you summarize with findings the images presented? [SEG] ."
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you summarize with findings the images presented? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973
+],
+"skip_special_tokens": true,
+"text": "Can you summarize with findings the images presented?"
+},
+{
+"ids": [
+1815,
+366,
+19138,
+675,
+411,
+1284,
+886,
+278,
+4558,
+9132,
+29973
+],
+"skip_special_tokens": false,
+"text": "Can you summarize with findings the images presented?"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please caption this scan with findings."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please caption this scan with findings.<|endoftext|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Please caption this scan with findings. <|end|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Please caption this scan with findings. <|end|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Please caption this scan with findings. <|assistant|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Please caption this scan with findings. <|assistant|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please caption this scan with findings. [SEG] ."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please caption this scan with findings. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": true,
+"text": "Please caption this scan with findings."
+},
+{
+"ids": [
+3529,
+5777,
+683,
+445,
+12812,
+411,
+1284,
+886,
+29889
+],
+"skip_special_tokens": false,
+"text": "Please caption this scan with findings."
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please provide a caption consists of findings for this medical image."
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please provide a caption consists of findings for this medical image.<|endoftext|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Please provide a caption consists of findings for this medical image. <|end|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Please provide a caption consists of findings for this medical image. <|end|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Please provide a caption consists of findings for this medical image. <|assistant|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Please provide a caption consists of findings for this medical image. <|assistant|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Please provide a caption consists of findings for this medical image. [SEG] ."
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Please provide a caption consists of findings for this medical image. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889
+],
+"skip_special_tokens": true,
+"text": "Please provide a caption consists of findings for this medical image."
+},
+{
+"ids": [
+3529,
+3867,
+263,
+5777,
+683,
+11624,
+310,
+1284,
+886,
+363,
+445,
+16083,
+1967,
+29889
+],
+"skip_special_tokens": false,
+"text": "Please provide a caption consists of findings for this medical image."
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you provide a summary consists of findings of this radiograph?"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you provide a summary consists of findings of this radiograph?<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": "Can you provide a summary consists of findings of this radiograph? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": "Can you provide a summary consists of findings of this radiograph? <|end|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": "Can you provide a summary consists of findings of this radiograph? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": "Can you provide a summary consists of findings of this radiograph? <|assistant|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you provide a summary consists of findings of this radiograph? [SEG] ."
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Can you provide a summary consists of findings of this radiograph? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973
+],
+"skip_special_tokens": true,
+"text": "Can you provide a summary consists of findings of this radiograph?"
+},
+{
+"ids": [
+1815,
+366,
+3867,
+263,
+15837,
+11624,
+310,
+1284,
+886,
+310,
+445,
+17937,
+1946,
+29973
+],
+"skip_special_tokens": false,
+"text": "Can you provide a summary consists of findings of this radiograph?"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "What is liver in this image? Please output the segmentation mask."
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "What is liver in this image? Please output the segmentation mask.<|endoftext|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "What is liver in this image? Please output the segmentation mask. <|end|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "What is liver in this image? Please output the segmentation mask. <|end|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "What is liver in this image? Please output the segmentation mask. <|assistant|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "What is liver in this image? Please output the segmentation mask. <|assistant|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "What is liver in this image? Please output the segmentation mask. [SEG] ."
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "What is liver in this image? Please output the segmentation mask. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889
+],
+"skip_special_tokens": true,
+"text": "What is liver in this image? Please output the segmentation mask."
+},
+{
+"ids": [
+1724,
+338,
+619,
+369,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+10768,
+362,
+11105,
+29889
+],
+"skip_special_tokens": false,
+"text": "What is liver in this image? Please output the segmentation mask."
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Where is brain in this image? Please output the box."
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Where is brain in this image? Please output the box.<|endoftext|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Where is brain in this image? Please output the box. <|end|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Where is brain in this image? Please output the box. <|end|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "Where is brain in this image? Please output the box. <|assistant|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "Where is brain in this image? Please output the box. <|assistant|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Where is brain in this image? Please output the box. [SEG] ."
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Where is brain in this image? Please output the box. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889
+],
+"skip_special_tokens": true,
+"text": "Where is brain in this image? Please output the box."
+},
+{
+"ids": [
+6804,
+338,
+17294,
+297,
+445,
+1967,
+29973,
+3529,
+1962,
+278,
+3800,
+29889
+],
+"skip_special_tokens": false,
+"text": "Where is brain in this image? Please output the box."
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32000
+],
+"skip_special_tokens": true,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32000
+],
+"skip_special_tokens": false,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown<|endoftext|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32007
+],
+"skip_special_tokens": true,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown <|end|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32007
+],
+"skip_special_tokens": false,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown <|end|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32001
+],
+"skip_special_tokens": true,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown <|assistant|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32001
+],
+"skip_special_tokens": false,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown <|assistant|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown [SEG] ."
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203
+],
+"skip_special_tokens": true,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown"
+},
+{
+"ids": [
+1317,
+727,
+10757,
+310,
+17546,
+346,
+17206,
+375,
+29973,
+14542,
+1575,
+29901,
+319,
+29889,
+3869,
+350,
+29889,
+1939,
+315,
+29889,
+7198,
+360,
+29889,
+853,
+5203
+],
+"skip_special_tokens": false,
+"text": "Is there evidence of hydrocephalus? Choices: A. Yes B. No C. Maybe D. Unknown"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe."
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe.<|endoftext|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. <|end|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. <|end|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. <|assistant|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. <|assistant|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. [SEG] ."
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889
+],
+"skip_special_tokens": true,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe."
+},
+{
+"ids": [
+323,
+29906,
+29914,
+18823,
+8193,
+11266,
+524,
+575,
+537,
+29892,
+29871,
+29941,
+29889,
+29945,
+921,
+29871,
+29906,
+29889,
+29896,
+7477,
+29892,
+297,
+278,
+2175,
+4565,
+284,
+658,
+915,
+29889
+],
+"skip_special_tokens": false,
+"text": "T2/FLAIR hyperintensity, 3.5 x 2.1 cm, in the left frontal lobe."
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode."
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode.<|endoftext|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. <|end|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. <|end|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. <|assistant|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. <|assistant|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. [SEG] ."
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889
+],
+"skip_special_tokens": true,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode."
+},
+{
+"ids": [
+450,
+29871,
+32014,
+5993,
+322,
+3694,
+29871,
+29896,
+29906,
+29941,
+29946,
+29945,
+322,
+904,
+26983,
+29948,
+29104,
+29889
+],
+"skip_special_tokens": false,
+"text": "The  [SEG] token and numbers 12345 and émigré unicode."
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": " leading space question?"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": " leading space question?<|endoftext|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": " leading space question? <|end|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": " leading space question? <|end|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": " leading space question? <|assistant|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": " leading space question? <|assistant|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": " leading space question? [SEG] ."
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": " leading space question? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973
+],
+"skip_special_tokens": true,
+"text": " leading space question?"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+1139,
+29973
+],
+"skip_special_tokens": false,
+"text": " leading space question?"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32000
+],
+"skip_special_tokens": true,
+"text": "double  space   and\nnewline and\ttab?"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32000
+],
+"skip_special_tokens": false,
+"text": "double  space   and\nnewline and\ttab?<|endoftext|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32007
+],
+"skip_special_tokens": true,
+"text": "double  space   and\nnewline and\ttab? <|end|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32007
+],
+"skip_special_tokens": false,
+"text": "double  space   and\nnewline and\ttab? <|end|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32001
+],
+"skip_special_tokens": true,
+"text": "double  space   and\nnewline and\ttab? <|assistant|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32001
+],
+"skip_special_tokens": false,
+"text": "double  space   and\nnewline and\ttab? <|assistant|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "double  space   and\nnewline and\ttab? [SEG] ."
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "double  space   and\nnewline and\ttab? [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973
+],
+"skip_special_tokens": true,
+"text": "double  space   and\nnewline and\ttab?"
+},
+{
+"ids": [
+3765,
+29871,
+2913,
+259,
+322,
+13,
+1482,
+1220,
+322,
+12,
+3891,
+29973
+],
+"skip_special_tokens": false,
+"text": "double  space   and\nnewline and\ttab?"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32000
+],
+"skip_special_tokens": true,
+"text": "trailing space "
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32000
+],
+"skip_special_tokens": false,
+"text": "trailing space <|endoftext|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32007
+],
+"skip_special_tokens": true,
+"text": "trailing space  <|end|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32007
+],
+"skip_special_tokens": false,
+"text": "trailing space  <|end|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32001
+],
+"skip_special_tokens": true,
+"text": "trailing space  <|assistant|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32001
+],
+"skip_special_tokens": false,
+"text": "trailing space  <|assistant|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "trailing space  [SEG] ."
+},
+{
+"ids": [
+25053,
+2913,
+29871,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "trailing space  [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+25053,
+2913,
+29871
+],
+"skip_special_tokens": true,
+"text": "trailing space "
+},
+{
+"ids": [
+25053,
+2913,
+29871
+],
+"skip_special_tokens": false,
+"text": "trailing space "
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe the brain MRI. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe the brain MRI. <|end|> <|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32007
+],
+"skip_special_tokens": true,
+"text": "Describe the brain MRI. <|end|> <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32007
+],
+"skip_special_tokens": false,
+"text": "Describe the brain MRI. <|end|> <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32001
+],
+"skip_special_tokens": true,
+"text": "Describe the brain MRI. <|end|> <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32001
+],
+"skip_special_tokens": false,
+"text": "Describe the brain MRI. <|end|> <|assistant|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Describe the brain MRI. <|end|> [SEG] ."
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Describe the brain MRI. <|end|> [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "Describe the brain MRI. <|end|>"
+},
+{
+"ids": [
+20355,
+915,
+278,
+17294,
+341,
+3960,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "Describe the brain MRI. <|end|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32000
+],
+"skip_special_tokens": true,
+"text": "中文问题：这是什么？"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32000
+],
+"skip_special_tokens": false,
+"text": "中文问题：这是什么？<|endoftext|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32007
+],
+"skip_special_tokens": true,
+"text": "中文问题：这是什么？ <|end|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32007
+],
+"skip_special_tokens": false,
+"text": "中文问题：这是什么？ <|end|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32001
+],
+"skip_special_tokens": true,
+"text": "中文问题：这是什么？ <|assistant|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32001
+],
+"skip_special_tokens": false,
+"text": "中文问题：这是什么？ <|assistant|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "中文问题：这是什么？ [SEG] ."
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "中文问题：这是什么？ [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882
+],
+"skip_special_tokens": true,
+"text": "中文问题：这是什么？"
+},
+{
+"ids": [
+29871,
+30275,
+30333,
+31658,
+31596,
+30383,
+30810,
+30392,
+231,
+190,
+131,
+31882,
+30882
+],
+"skip_special_tokens": false,
+"text": "中文问题：这是什么？"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32000
+],
+"skip_special_tokens": true,
+"text": " underscore-like   char"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32000
+],
+"skip_special_tokens": false,
+"text": " underscore-like   char<|endoftext|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32007
+],
+"skip_special_tokens": true,
+"text": " underscore-like   char <|end|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32007
+],
+"skip_special_tokens": false,
+"text": " underscore-like   char <|end|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32001
+],
+"skip_special_tokens": true,
+"text": " underscore-like   char <|assistant|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32001
+],
+"skip_special_tokens": false,
+"text": " underscore-like   char <|assistant|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": " underscore-like   char [SEG] ."
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": " underscore-like   char [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373
+],
+"skip_special_tokens": true,
+"text": " underscore-like   char"
+},
+{
+"ids": [
+29871,
+23400,
+3221,
+29899,
+4561,
+259,
+1373
+],
+"skip_special_tokens": false,
+"text": " underscore-like   char"
+},
+{
+"ids": [
+32000
+],
+"skip_special_tokens": true,
+"text": ""
+},
+{
+"ids": [
+32000
+],
+"skip_special_tokens": false,
+"text": "<|endoftext|>"
+},
+{
+"ids": [
+32007
+],
+"skip_special_tokens": true,
+"text": "<|end|>"
+},
+{
+"ids": [
+32007
+],
+"skip_special_tokens": false,
+"text": "<|end|>"
+},
+{
+"ids": [
+32001
+],
+"skip_special_tokens": true,
+"text": "<|assistant|>"
+},
+{
+"ids": [
+32001
+],
+"skip_special_tokens": false,
+"text": "<|assistant|>"
+},
+{
+"ids": [
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "[SEG] ."
+},
+{
+"ids": [
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "[SEG] .<|endoftext|>"
+},
+{
+"ids": [],
+"skip_special_tokens": true,
+"text": ""
+},
+{
+"ids": [],
+"skip_special_tokens": false,
+"text": ""
+},
+{
+"ids": [
+15043,
+3186,
+32000
+],
+"skip_special_tokens": true,
+"text": "Hello world"
+},
+{
+"ids": [
+15043,
+3186,
+32000
+],
+"skip_special_tokens": false,
+"text": "Hello world<|endoftext|>"
+},
+{
+"ids": [
+15043,
+3186,
+32007
+],
+"skip_special_tokens": true,
+"text": "Hello world <|end|>"
+},
+{
+"ids": [
+15043,
+3186,
+32007
+],
+"skip_special_tokens": false,
+"text": "Hello world <|end|>"
+},
+{
+"ids": [
+15043,
+3186,
+32001
+],
+"skip_special_tokens": true,
+"text": "Hello world <|assistant|>"
+},
+{
+"ids": [
+15043,
+3186,
+32001
+],
+"skip_special_tokens": false,
+"text": "Hello world <|assistant|>"
+},
+{
+"ids": [
+15043,
+3186,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "Hello world [SEG] ."
+},
+{
+"ids": [
+15043,
+3186,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "Hello world [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+15043,
+3186
+],
+"skip_special_tokens": true,
+"text": "Hello world"
+},
+{
+"ids": [
+15043,
+3186
+],
+"skip_special_tokens": false,
+"text": "Hello world"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32000
+],
+"skip_special_tokens": true,
+"text": " leading space"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32000
+],
+"skip_special_tokens": false,
+"text": " leading space<|endoftext|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32007
+],
+"skip_special_tokens": true,
+"text": " leading space <|end|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32007
+],
+"skip_special_tokens": false,
+"text": " leading space <|end|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32001
+],
+"skip_special_tokens": true,
+"text": " leading space <|assistant|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32001
+],
+"skip_special_tokens": false,
+"text": " leading space <|assistant|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": " leading space [SEG] ."
+},
+{
+"ids": [
+29871,
+8236,
+2913,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": " leading space [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+8236,
+2913
+],
+"skip_special_tokens": true,
+"text": " leading space"
+},
+{
+"ids": [
+29871,
+8236,
+2913
+],
+"skip_special_tokens": false,
+"text": " leading space"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32000
+],
+"skip_special_tokens": true,
+"text": "multiple   spaces\nnewline"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32000
+],
+"skip_special_tokens": false,
+"text": "multiple   spaces\nnewline<|endoftext|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32007
+],
+"skip_special_tokens": true,
+"text": "multiple   spaces\nnewline <|end|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32007
+],
+"skip_special_tokens": false,
+"text": "multiple   spaces\nnewline <|end|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32001
+],
+"skip_special_tokens": true,
+"text": "multiple   spaces\nnewline <|assistant|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32001
+],
+"skip_special_tokens": false,
+"text": "multiple   spaces\nnewline <|assistant|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "multiple   spaces\nnewline [SEG] ."
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "multiple   spaces\nnewline [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220
+],
+"skip_special_tokens": true,
+"text": "multiple   spaces\nnewline"
+},
+{
+"ids": [
+2999,
+259,
+8162,
+13,
+1482,
+1220
+],
+"skip_special_tokens": false,
+"text": "multiple   spaces\nnewline"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "The ventricles are normal."
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "The ventricles are normal.<|endoftext|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32007
+],
+"skip_special_tokens": true,
+"text": "The ventricles are normal. <|end|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32007
+],
+"skip_special_tokens": false,
+"text": "The ventricles are normal. <|end|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32001
+],
+"skip_special_tokens": true,
+"text": "The ventricles are normal. <|assistant|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32001
+],
+"skip_special_tokens": false,
+"text": "The ventricles are normal. <|assistant|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "The ventricles are normal. [SEG] ."
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "The ventricles are normal. [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889
+],
+"skip_special_tokens": true,
+"text": "The ventricles are normal."
+},
+{
+"ids": [
+450,
+9712,
+2200,
+793,
+526,
+4226,
+29889
+],
+"skip_special_tokens": false,
+"text": "The ventricles are normal."
+},
+{
+"ids": [
+29871,
+32014,
+32000
+],
+"skip_special_tokens": true,
+"text": "[SEG]"
+},
+{
+"ids": [
+29871,
+32014,
+32000
+],
+"skip_special_tokens": false,
+"text": "[SEG] <|endoftext|>"
+},
+{
+"ids": [
+29871,
+32014,
+32007
+],
+"skip_special_tokens": true,
+"text": "[SEG] <|end|>"
+},
+{
+"ids": [
+29871,
+32014,
+32007
+],
+"skip_special_tokens": false,
+"text": "[SEG] <|end|>"
+},
+{
+"ids": [
+29871,
+32014,
+32001
+],
+"skip_special_tokens": true,
+"text": "[SEG] <|assistant|>"
+},
+{
+"ids": [
+29871,
+32014,
+32001
+],
+"skip_special_tokens": false,
+"text": "[SEG] <|assistant|>"
+},
+{
+"ids": [
+29871,
+32014,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "[SEG] [SEG] ."
+},
+{
+"ids": [
+29871,
+32014,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "[SEG] [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+32014
+],
+"skip_special_tokens": true,
+"text": "[SEG]"
+},
+{
+"ids": [
+29871,
+32014
+],
+"skip_special_tokens": false,
+"text": "[SEG]"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32000
+],
+"skip_special_tokens": true,
+"text": "<|end|> x"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32000
+],
+"skip_special_tokens": false,
+"text": "<|end|> x<|endoftext|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32007
+],
+"skip_special_tokens": true,
+"text": "<|end|> x <|end|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32007
+],
+"skip_special_tokens": false,
+"text": "<|end|> x <|end|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32001
+],
+"skip_special_tokens": true,
+"text": "<|end|> x <|assistant|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32001
+],
+"skip_special_tokens": false,
+"text": "<|end|> x <|assistant|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "<|end|> x [SEG] ."
+},
+{
+"ids": [
+29871,
+32007,
+29916,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "<|end|> x [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+29871,
+32007,
+29916
+],
+"skip_special_tokens": true,
+"text": "<|end|> x"
+},
+{
+"ids": [
+29871,
+32007,
+29916
+],
+"skip_special_tokens": false,
+"text": "<|end|> x"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32000
+],
+"skip_special_tokens": true,
+"text": "a\n\nb"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32000
+],
+"skip_special_tokens": false,
+"text": "a\n\nb<|endoftext|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32007
+],
+"skip_special_tokens": true,
+"text": "a\n\nb <|end|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32007
+],
+"skip_special_tokens": false,
+"text": "a\n\nb <|end|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32001
+],
+"skip_special_tokens": true,
+"text": "a\n\nb <|assistant|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32001
+],
+"skip_special_tokens": false,
+"text": "a\n\nb <|assistant|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": true,
+"text": "a\n\nb [SEG] ."
+},
+{
+"ids": [
+263,
+13,
+13,
+29890,
+32014,
+29889,
+32000
+],
+"skip_special_tokens": false,
+"text": "a\n\nb [SEG] .<|endoftext|>"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890
+],
+"skip_special_tokens": true,
+"text": "a\n\nb"
+},
+{
+"ids": [
+263,
+13,
+13,
+29890
+],
+"skip_special_tokens": false,
+"text": "a\n\nb"
+},
+{
+"ids": [
+1,
+32011,
+32011,
+32011,
+32011,
+1815,
+366,
+32000
+],
+"skip_special_tokens": true,
+"text": "Can you"
+},
+{
+"ids": [
+1,
+32011,
+32011,
+32011,
+32011,
+1815,
+366,
+32000
+],
+"skip_special_tokens": false,
+"text": "<s> <im_patch> <im_patch> <im_patch> <im_patch> Can you<|endoftext|>"
+},
+{
+"ids": [
+13,
+13,
+450
+],
+"skip_special_tokens": true,
+"text": "\n\n The"
+},
+{
+"ids": [
+13,
+13,
+450
+],
+"skip_special_tokens": false,
+"text": "\n\n The"
+}
+]
+}

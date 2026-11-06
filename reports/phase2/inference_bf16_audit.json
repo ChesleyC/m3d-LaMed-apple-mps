@@ -1,0 +1,176 @@
+{
+ "system": {
+  "macos": "26.0",
+  "machine": "arm64",
+  "chip": "Apple M5",
+  "memory_bytes": 34359738368,
+  "gpu_cores": 10,
+  "python": "3.13.5",
+  "torch": "2.15.0",
+  "transformers": "5.22.1",
+  "mps_built": true,
+  "mps_available": true,
+  "mps_fallback_env": "0",
+  "mps_recommended_max_memory": 26800603136
+ },
+ "args": {
+  "image": "upstream/M3D/Data/data/examples/example_05.npy",
+  "model_dir": null,
+  "question": "Can you provide a caption consists of findings for this medical image?",
+  "task": "caption",
+  "dtype": "bf16",
+  "attn": "sdpa",
+  "max_new_tokens": 256,
+  "do_sample": false,
+  "top_p": 0.9,
+  "temperature": 1.0,
+  "seed": 0,
+  "orientation": "radiological",
+  "reverse_slices": false,
+  "clip": [
+   0.5,
+   99.5
+  ],
+  "no_clip": false,
+  "seg": false,
+  "seg_out": null,
+  "seg_montage": null,
+  "audit": true,
+  "montage": null,
+  "save_preprocessed": null,
+  "json_out": "reports/phase2/inference_bf16_audit.json"
+ },
+ "preprocess": {
+  "source": "upstream/M3D/Data/data/examples/example_05.npy",
+  "source_format": "npy",
+  "original_shape": [
+   1,
+   32,
+   256,
+   256
+  ],
+  "original_spacing": [],
+  "orientation": "as-stored",
+  "reverse_slices": false,
+  "clip_percentiles": null,
+  "clip_values": null,
+  "crop_box": [],
+  "cropped_shape": [],
+  "output_shape": [
+   32,
+   256,
+   256
+  ],
+  "passthrough": true,
+  "notes": [
+   "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+  ],
+  "seconds": 0.026
+ },
+ "load": {
+  "model_dir": "models",
+  "revision_expected": "329bed510c2cff0ad3fe6f2a1a7075f45e2706e9",
+  "load": {
+   "ok": true,
+   "loaded": 617,
+   "expected": 617,
+   "missing": [],
+   "unexpected": [],
+   "shape_mismatch": [],
+   "source_dtypes": {
+    "float32": 617
+   },
+   "target_dtype": "bfloat16",
+   "gb_read": 16.196,
+   "seconds": 15.19
+  },
+  "total_load_seconds": 15.23,
+  "dtype": "torch.bfloat16",
+  "device": "mps",
+  "attn_implementation": "sdpa"
+ },
+ "result": {
+  "text": "No acute fracture.Normal pelvic CT in an older adult female uploaded for reference.",
+  "output_ids": [
+   1939,
+   1274,
+   1082,
+   285,
+   1461,
+   545,
+   29889,
+   19077,
+   4639,
+   26311,
+   26637,
+   297,
+   385,
+   9642,
+   16157,
+   12944,
+   20373,
+   363,
+   3407,
+   29889,
+   32000
+  ],
+  "question": "Can you provide a caption consists of findings for this medical image?",
+  "prompt_tokens": 272,
+  "new_tokens": 21,
+  "timings": {
+   "total_s": 2.424,
+   "vision_encoder_projector_s": 0.2209,
+   "time_to_first_token_s": 0.5565,
+   "decode_s": 1.8669,
+   "decode_tokens": 21,
+   "decode_tokens_per_s": 11.25,
+   "end_to_end_tokens_per_s": 8.66
+  },
+  "memory": {
+   "mps_peak_allocated": 8230862592,
+   "mps_peak_driver_allocated": 8978710528,
+   "samples": 935,
+   "mps_current_allocated": 8109952512,
+   "mps_driver_allocated": 8978694144,
+   "phys_footprint": 9382758056,
+   "lifetime_max_phys_footprint": 9383528104,
+   "resident_size": 828522496
+  },
+  "audit": {
+   "ok": true,
+   "mps_compute_ops": 47352,
+   "distinct_mps_ops": 52,
+   "top_mps_ops": {
+    "slice": 7858,
+    "mul": 6490,
+    "add": 4337,
+    "cat": 4292,
+    "to": 2996,
+    "linear": 2889,
+    "transpose": 2830,
+    "view": 2146,
+    "unsqueeze": 1452,
+    "dropout": 1445,
+    "pow": 1430,
+    "mean": 1430
+   },
+   "host_device_transfers": {
+    "to": 32,
+    "copy_": 22
+   },
+   "cpu_compute_ops": {},
+   "cpu_scalar_ops": {
+    "lift_fresh": 32,
+    "detach_": 32,
+    "zeros": 4,
+    "is_nonzero": 21
+   },
+   "other_device_ops": {}
+  }
+ },
+ "final_footprint": {
+  "phys_footprint": 9382790824,
+  "lifetime_max_phys_footprint": 9383528104,
+  "resident_size": 828686336
+ }
+}

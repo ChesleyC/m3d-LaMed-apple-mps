@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m3d-lamed-mps"
+version = "0.1.0"
+description = "M3D-LaMed-Phi-3-4B (3D medical VLM) inference ported to Apple Silicon / PyTorch MPS"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Cheng Cheng (Benjamin Cheng)" }]
+dependencies = [
+    "torch==2.15.0",
+    "transformers==5.22.1",
+    "safetensors>=0.8",
+    "sentencepiece>=0.2",
+    "protobuf",
+    "tokenizers>=0.23",
+    "numpy>=2",
+    "SimpleITK>=2.5",
+    "huggingface_hub>=1.0",
+]
+
+[project.optional-dependencies]
+# test-only: reference implementations used for parity checks (never imported by the runtime package)
+test = ["pytest>=8", "monai==1.6.1", "einops>=0.8", "nibabel>=5"]
+
+[tool.setuptools]
+packages = ["m3d_lamed_mps"]
+
+[tool.setuptools.package-data]
+m3d_lamed_mps = ["checkpoint_manifest.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore:.*Redirects are currently not supported.*"]

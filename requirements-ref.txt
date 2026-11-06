@@ -1,0 +1,15 @@
+# Reference environment for scripts/upstream_reference.py ONLY (not used by the port).
+# Runs the *verbatim official* remote code (trust_remote_code) on CPU fp32 with the software stack the
+# checkpoint was built with: torch 2.2.1 (upstream: 2.2.1+cu118), transformers 4.42 (config says
+# 4.42.0.dev0), MONAI 1.3.0, einops 0.8.0, numpy 1.26.4 (= BAAI-DCAI/M3D requirements.txt).
+# Needs Python 3.10-3.12 (no torch 2.2 wheels for 3.13). Created by scripts/setup_reference_env.sh.
+torch==2.2.1
+numpy==1.26.4
+transformers==4.42.4
+tokenizers==0.19.1
+sentencepiece==0.2.0
+protobuf==4.25.3
+safetensors==0.4.3
+accelerate==0.32.1
+monai==1.3.0
+einops==0.8.0

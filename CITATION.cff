@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata below, and please also cite the
+  original M3D paper listed under references.
+title: "m3d-LaMed-apple-mps: M3D-LaMed-Phi-3-4B on Apple Silicon (PyTorch MPS)"
+abstract: >-
+  Inference port of the M3D-LaMed-Phi-3-4B 3D medical vision-language model (3D ViT, Phi-3-mini,
+  SegVol) to Apple Silicon with PyTorch MPS. It loads the original checkpoint unchanged, runs
+  image-to-text and segmentation entirely on the GPU without CUDA or CPU fallback, and is verified
+  token for token against the official implementation.
+type: software
+authors:
+  - given-names: Cheng
+    family-names: Cheng
+    alias: Benjamin Cheng
+    affiliation: Stanford University
+    website: "https://openreview.net/profile?id=~Cheng_Cheng18"
+repository-code: "https://github.com/ChesleyC/m3d-LaMed-apple-mps"
+license: MIT
+version: 0.1.0
+date-released: "2026-11-05"
+keywords:
+  - medical imaging
+  - vision-language model
+  - 3D
+  - Apple Silicon
+  - PyTorch MPS
+  - M3D-LaMed
+references:
+  - type: article
+    title: "M3D: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models"
+    authors:
+      - given-names: Fan
+        family-names: Bai
+      - given-names: Yuxin
+        family-names: Du
+      - given-names: Tiejun
+        family-names: Huang
+      - given-names: Max Q.-H.
+        family-names: Meng
+      - given-names: Bo
+        family-names: Zhao
+    year: 2024
+    url: "https://arxiv.org/abs/2404.00578"
+  - type: article
+    title: "SegVol: Universal and Interactive Volumetric Medical Image Segmentation"
+    authors:
+      - given-names: Yuxin
+        family-names: Du
+      - given-names: Fan
+        family-names: Bai
+      - given-names: Tiejun
+        family-names: Huang
+      - given-names: Bo
+        family-names: Zhao
+    year: 2023
+    url: "https://arxiv.org/abs/2311.13385"

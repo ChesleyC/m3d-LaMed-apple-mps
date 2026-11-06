@@ -1,0 +1,6 @@
+expected revision: GoodBaiBai88/M3D-LaMed-Phi-3-4B@329bed510c2cff0ad3fe6f2a1a7075f45e2706e9
+model dir: models
+  present: 11 files
+  sha256 verified: 11 files
+  status: OK
+  header check: 617 tensors, 0 unexpected/mis-shaped, 0 missing

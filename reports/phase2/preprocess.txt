@@ -1,0 +1,28 @@
+{
+ "source": "upstream/M3D/Data/data/examples/example_05.npy",
+ "source_format": "npy",
+ "original_shape": [
+  1,
+  32,
+  256,
+  256
+ ],
+ "original_spacing": [],
+ "orientation": "as-stored",
+ "reverse_slices": false,
+ "clip_percentiles": null,
+ "clip_values": null,
+ "crop_box": [],
+ "cropped_shape": [],
+ "output_shape": [
+  32,
+  256,
+  256
+ ],
+ "passthrough": true,
+ "notes": [
+  "already preprocessed (1x32x256x256 in [0,1]); passed through unchanged"
+ ]
+}
+saved reports/phase2/input_m3d.npy: shape (1, 32, 256, 256), range [0.000, 1.000]
+montage: reports/phase2/input_montage.png

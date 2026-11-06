@@ -1,0 +1,73 @@
+{
+ "repo_id": "GoodBaiBai88/M3D-LaMed-Phi-3-4B",
+ "revision": "329bed510c2cff0ad3fe6f2a1a7075f45e2706e9",
+ "checkpoint_license": "apache-2.0",
+ "note": "configuration_m3d_lamed.py / modeling_m3d_lamed.py are listed for completeness only; this port never imports or executes them.",
+ "files": {
+  "model-00001-of-00004.safetensors": {
+   "size": 4961250304,
+   "sha256": "74c09988d2b410d5d60964af3270f8c40aacecd1c42569efd94ffdad64c389a3",
+   "required": true
+  },
+  "model-00002-of-00004.safetensors": {
+   "size": 4983111176,
+   "sha256": "deeaf7b4b4078e3d9a2a4ecba44f2307252889cf274b987f6377e4ad64bc77f8",
+   "required": true
+  },
+  "model-00003-of-00004.safetensors": {
+   "size": 4992612024,
+   "sha256": "0ac2f42cdb98a113c2c4c40d3878fa11b571349a57d68044bf778f18f0e5f8de",
+   "required": true
+  },
+  "model-00004-of-00004.safetensors": {
+   "size": 1259512848,
+   "sha256": "e02aadccf325e90daa9cf02700b9623457fbb5bfa1e79e2c46a45e010c6384ba",
+   "required": true
+  },
+  "model.safetensors.index.json": {
+   "size": 60426,
+   "sha256": "b6cb9a661f7f3ccb803ca7e4d3172c33c63c6e98eba3f95100240d09b67d47c3",
+   "required": true
+  },
+  "config.json": {
+   "size": 1457,
+   "sha256": "ec15754b2b7d0e96de83c068ee9c51ddacdf6905fc6d03a8500e78725195fff3",
+   "required": true
+  },
+  "configuration_m3d_lamed.py": {
+   "size": 106,
+   "sha256": "7e3d64390e18f80c41e51ff89621939e0f1b95c21faf348a8f447bf0fcb1222f",
+   "required": false
+  },
+  "modeling_m3d_lamed.py": {
+   "size": 85121,
+   "sha256": "ad573c86ff208022ef246a632e60df4a03ed285f24efda1b55a0ec97d2cce7b7",
+   "required": false
+  },
+  "generation_config.json": {
+   "size": 177,
+   "sha256": "ad8cb17034ebdfa2487b30957cda6b780734e84b71daf6049b95081297932778",
+   "required": true
+  },
+  "tokenizer.model": {
+   "size": 499723,
+   "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+   "required": true
+  },
+  "tokenizer_config.json": {
+   "size": 4026,
+   "sha256": "c12ddc2dac25e553985b6e452bc359ca6cc7760263e7c4eece8f01c40d8e0326",
+   "required": true
+  },
+  "special_tokens_map.json": {
+   "size": 1036,
+   "sha256": "fcc520b1b08587a6792884b2850914ef1079d9db9b6a7c535e12c590314b89ca",
+   "required": true
+  },
+  "added_tokens.json": {
+   "size": 378,
+   "sha256": "8e68dfb8d2400e8b8bd1341220520ba1977954dcc6e5c5bb6100dd829d10094c",
+   "required": true
+  }
+ }
+}
