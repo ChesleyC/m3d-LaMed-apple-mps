@@ -20,8 +20,8 @@ unchanged (no retraining, no conversion) and runs 3D-image-to-text and segmentat
 
 | Status | |
 |---|---|
-| **Phase 1** — compatibility (synthetic tensors, no weights) | ✅ done, [report](reports/phase1/PHASE1_REPORT.md) |
-| **Phase 2** — original weights, official example CTs | ✅ done, [report](reports/phase2/PHASE2_REPORT.md) |
+| **Phase 1** — compatibility (synthetic tensors, no weights) | ☑ done, [report](reports/phase1/PHASE1_REPORT.md) |
+| **Phase 2** — original weights, official example CTs | ☑ done, [report](reports/phase2/PHASE2_REPORT.md) |
 
 All changes vs upstream and the known limitations: **[PORTING_NOTES.md](PORTING_NOTES.md)**.
 
